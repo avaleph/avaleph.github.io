@@ -161,7 +161,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/" class="post-title-link" itemprop="url">虚拟存储</a>
+            <a href="/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/" class="post-title-link" itemprop="url">虚拟存储概述</a>
         </h2>
 
         <div class="post-meta">
@@ -172,7 +172,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-05-08 22:04:04 / Modified: 22:05:02" itemprop="dateCreated datePublished" datetime="2022-05-08T22:04:04+08:00">2022-05-08</time>
+              <time title="Created: 2022-05-08 22:04:04 / Modified: 22:15:10" itemprop="dateCreated datePublished" datetime="2022-05-08T22:04:04+08:00">2022-05-08</time>
             </span>
 
           
@@ -213,7 +213,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -227,7 +227,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/05/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/" class="post-title-link" itemprop="url">存储管理</a>
         </h2>
 
         <div class="post-meta">
@@ -236,8 +236,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-05-08 21:38:57" itemprop="dateCreated datePublished" datetime="2022-05-08T21:38:57+08:00">2022-05-08</time>
+              <time title="Created: 2022-05-08 22:04:04 / Modified: 22:15:30" itemprop="dateCreated datePublished" datetime="2022-05-08T22:04:04+08:00">2022-05-08</time>
             </span>
 
           
@@ -251,19 +252,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <h3 id="逻辑地址"><a href="#逻辑地址" class="headerlink" title="逻辑地址"></a>逻辑地址</h3><p>逻辑地址：又称相对地址，是用户编程所使用的地址空间。</p>
+<p>逻辑地址从0开始编号，有两种形式：</p>
+<p>一维逻辑地址（地址）</p>
+<p>二维逻辑地址（段号：段内地址）—— <a href="#table1"> 段式程序设计 </a></p>
+<h3 id="物理地址"><a href="#物理地址" class="headerlink" title="物理地址"></a>物理地址</h3><p>物理地址又称绝对地址，是程序执行使用的地址空间。CPU处理器执行指令必须使用物理地址。</p>
+<h3 id="主存储器的复用"><a href="#主存储器的复用" class="headerlink" title="主存储器的复用"></a>主存储器的复用</h3><p>分区复用：划分多个固定&#x2F;可变尺寸的分区，一个程序&#x2F;程序段占用一个分区。</p>
+<p>页架复用：划分多个固定大小的页架，一个程序&#x2F;程序段占用多个页架。</p>
+<h3 id="存储管理模式"><a href="#存储管理模式" class="headerlink" title="存储管理模式"></a>存储管理模式</h3><p><img src="C:\Users\韩振涛\Desktop\逻辑地址.assets\微信截图_20220508164108.png" alt="微信截图_20220508164108"></p>
+<h3 id="地址转换"><a href="#地址转换" class="headerlink" title="地址转换"></a>地址转换</h3><p>又称重定位，把逻辑地址转换为绝对地址。</p>
+<p>静态重定位：程序装入内存时进行地址转换。</p>
+<p>动态重定位：在CPU执行程序时进行地址转换。必须由硬件来执行（效率）。</p>
+<h3 id="主存储器空间的共享"><a href="#主存储器空间的共享" class="headerlink" title="主存储器空间的共享"></a>主存储器空间的共享</h3><p>多个进程共享主存储器资源或者多个进程共享主存储器的某些区域。</p>
+<p>为了避免主存中多个进程相互干扰，必须对主存中的程序和数据进行保护。这一功能需要软硬件协同完成，CPU检查是否允许访问，不允许则产生地址保护异常。</p>
+<h3 id="主存储器空间的扩充"><a href="#主存储器空间的扩充" class="headerlink" title="主存储器空间的扩充"></a>主存储器空间的扩充</h3><p><strong>存储扩充</strong>：把磁盘作为主存扩充，只把部分进程或者进程的部分内容装入内存。</p>
+<p>对换技术：把部分不运行的进程调出。</p>
+<p>虚拟技术：只调入进程的部分内容。</p>
+<h3 id="段式程序设计"><a href="#段式程序设计" class="headerlink" title="段式程序设计"></a><a id="table1">段式程序设计</a></h3><p>把一个代码设计成多个段（代码段，数据段，堆栈段），使得用户可以自己应用段覆盖技术扩充内存。</p>
+<p>这一技术是程序设计技术，不是OS存储管理的功能。</p>
+<h3 id="超链接的制作方法"><a href="#超链接的制作方法" class="headerlink" title="超链接的制作方法"></a>超链接的制作方法</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;table1&quot;</span>&gt;</span>Table1<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 		#要跳转的位置,id = 链接位置</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#table1&quot;</span>&gt;</span>跳转到Table1<span class="tag">&lt;/<span class="name">a</span>&gt;</span>	#在需要跳转的地方引用,点击即可实现跳转(编辑器中右键打开链接)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
