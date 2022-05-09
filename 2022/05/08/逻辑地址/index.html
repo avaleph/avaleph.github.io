@@ -31,19 +31,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>存储管理 - avaleph's blog</title>
+  <title>1-存储管理 - avaleph's blog</title>
   <meta name="keywords" content="OS,null">
   <meta desc name="description" content="随笔 - zhentao han - avaleph's blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="存储管理">
+<meta property="og:title" content="1-存储管理">
 <meta property="og:url" content="http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
-<meta property="og:description" content="逻辑地址逻辑地址：又称相对地址，是用户编程所使用的地址空间。 逻辑地址从0开始编号，有两种形式： 一维逻辑地址（地址） 二维逻辑地址（段号：段内地址）——  段式程序设计  物理地址物理地址又称绝对地址，是程序执行使用的地址空间。CPU处理器执行指令必须使用物理地址。 主存储器的复用分区复用：划分多个固定&#x2F;可变尺寸的分区，一个程序&#x2F;程序段占用一个分区。 页架复用：划分多个固定大">
+<meta property="og:description" content="存储管理基础存储器硬件存储器的功能：保存数据，存储器的发展目标是高速、大容量和小体积。 静态存储器（SRAM）：读写速度快，生产成本高，多用于容量较小的高速缓冲存储器。- Cache  动态存储器（DRAM）：读写速度较慢，集成度高，生产成本低，多用于容量较大的主存。 存储组织结构存储组织的功能是在存储技术和CPU寻址技术许可的范围内组织合理的存储结构，其依据是访问速度匹配关系、容量要求和价格。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-08T13:04:04.000Z">
-<meta property="article:modified_time" content="2022-05-08T14:21:19.822Z">
+<meta property="article:modified_time" content="2022-05-09T02:31:28.601Z">
 <meta property="article:author" content="zhentao han">
 <meta property="article:tag" content="OS">
 <meta name="twitter:card" content="summary">
@@ -1912,7 +1912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1652060095616),
+    lastupdate: new Date(1652068792064),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2683,7 +2683,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        存储管理
+        1-存储管理
       </h1>
       <div class='new-meta-box'>
         
@@ -2728,7 +2728,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="逻辑地址"><a href="#逻辑地址" class="headerlink" title="逻辑地址"></a>逻辑地址</h3><p>逻辑地址：又称相对地址，是用户编程所使用的地址空间。</p>
+    <h3 id="存储管理基础"><a href="#存储管理基础" class="headerlink" title="存储管理基础"></a>存储管理基础</h3><h4 id="存储器硬件"><a href="#存储器硬件" class="headerlink" title="存储器硬件"></a>存储器硬件</h4><p>存储器的功能：保存数据，存储器的发展目标是高速、大容量和小体积。</p>
+<p>静态存储器（SRAM）：读写速度快，生产成本高，多用于容量较小的高速缓冲存储器。- Cache </p>
+<p>动态存储器（DRAM）：读写速度较慢，集成度高，生产成本低，多用于容量较大的主存。</p>
+<h4 id="存储组织结构"><a href="#存储组织结构" class="headerlink" title="存储组织结构"></a>存储组织结构</h4><p>存储组织的功能是在存储技术和CPU寻址技术许可的范围内组织合理的存储结构，其依据是访问速度匹配关系、容量要求和价格。</p>
+<p>寄存器-缓存-内存-外存</p>
+<p>最佳状态应是各层次的存储器都处于均衡的繁忙状态（如：缓存命中率正好使主存读写保持繁忙）。</p>
+<h3 id="存储管理的功能"><a href="#存储管理的功能" class="headerlink" title="存储管理的功能"></a>存储管理的功能</h3><h4 id="分配和回收"><a href="#分配和回收" class="headerlink" title="分配和回收"></a>分配和回收</h4><p>当用户请求内存时，及时响应，分配内存。</p>
+<p>当用户不需要时及时回收内存，让其他用户使用。</p>
+<h4 id="扩充容量-——-主存的扩充"><a href="#扩充容量-——-主存的扩充" class="headerlink" title="扩充容量 —— 主存的扩充"></a>扩充容量 —— <a href="#table2">主存的扩充</a></h4><p>交换技术。</p>
+<p>虚拟存储技术。</p>
+<h4 id="共享"><a href="#共享" class="headerlink" title="共享"></a>共享</h4><p>多个进程共享内存中的相同区域。</p>
+<p>共享代码——节省内存空间。</p>
+<p>共享数据——实现进程通讯。</p>
+<h4 id="保护"><a href="#保护" class="headerlink" title="保护"></a>保护</h4><p>地址越界保护 </p>
+<p>–进行地址越界可能会影响其他程序或者OS </p>
+<p>–越界—产生异常，交给OS处理</p>
+<p>权限保护 </p>
+<p>–共享区域，权限不同 </p>
+<p>–读写权限保护</p>
+<h3 id="管理方法"><a href="#管理方法" class="headerlink" title="管理方法"></a>管理方法</h3><p>位图法（每一位01代表内存的状态）</p>
+<p>链表法</p>
+<h3 id="逻辑地址"><a href="#逻辑地址" class="headerlink" title="逻辑地址"></a>逻辑地址</h3><p>逻辑地址：又称相对地址，是用户编程所使用的地址空间。</p>
 <p>逻辑地址从0开始编号，有两种形式：</p>
 <p>一维逻辑地址（地址）</p>
 <p>二维逻辑地址（段号：段内地址）—— <a href="#table1"> 段式程序设计 </a></p>
@@ -2741,7 +2762,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>动态重定位：在CPU执行程序时进行地址转换。必须由硬件来执行（效率）。</p>
 <h3 id="主存储器空间的共享"><a href="#主存储器空间的共享" class="headerlink" title="主存储器空间的共享"></a>主存储器空间的共享</h3><p>多个进程共享主存储器资源或者多个进程共享主存储器的某些区域。</p>
 <p>为了避免主存中多个进程相互干扰，必须对主存中的程序和数据进行保护。这一功能需要软硬件协同完成，CPU检查是否允许访问，不允许则产生地址保护异常。</p>
-<h3 id="主存储器空间的扩充"><a href="#主存储器空间的扩充" class="headerlink" title="主存储器空间的扩充"></a>主存储器空间的扩充</h3><p><strong>存储扩充</strong>：把磁盘作为主存扩充，只把部分进程或者进程的部分内容装入内存。</p>
+<h3 id="主存储器空间的扩充"><a href="#主存储器空间的扩充" class="headerlink" title="主存储器空间的扩充"></a><a id="table2">主存储器空间的扩充</a></h3><p><strong>存储扩充</strong>：把磁盘作为主存扩充，只把部分进程或者进程的部分内容装入内存。</p>
 <p>对换技术：把部分不运行的进程调出。</p>
 <p>虚拟技术：只调入进程的部分内容。</p>
 <h3 id="段式程序设计"><a href="#段式程序设计" class="headerlink" title="段式程序设计"></a><a id="table1">段式程序设计</a></h3><p>把一个代码设计成多个段（代码段，数据段，堆栈段），使得用户可以自己应用段覆盖技术扩充内存。</p>
@@ -2786,10 +2807,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-08T22:21:19+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-09T10:31:28+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 8, 2022</p>
+    <p>更新于：May 9, 2022</p>
   </a>
 </div>
 
@@ -2812,7 +2833,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/&title=存储管理 - avaleph's blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/&title=1-存储管理 - avaleph's blog&summary="
           
           >
           
@@ -2824,7 +2845,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/&title=存储管理 - avaleph's blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/&title=1-存储管理 - avaleph's blog&summary="
           
           >
           
@@ -2836,7 +2857,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/&title=存储管理 - avaleph's blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/&title=1-存储管理 - avaleph's blog&summary="
           
           >
           
@@ -2870,7 +2891,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
         <a class='prev' href='/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>虚拟存储概述</p>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>2-虚拟存储概述</p>
           <p class='content'>虚拟存储器虚存的原因主存容量具有限制，用户在编程的时候必须考虑主存容量限制。同时，多道程序设计的道数也受到限制。
 程序执行的过程具有顺序性和循环性，在访问内存时具有空间局部性的特点，某一阶段的执...</p>
         </a>
@@ -2922,7 +2943,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80"><span class="toc-text">逻辑地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%9C%B0%E5%9D%80"><span class="toc-text">物理地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E5%A4%8D%E7%94%A8"><span class="toc-text">主存储器的复用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">存储管理模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2"><span class="toc-text">地址转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%82%A8%E5%99%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E5%85%B1%E4%BA%AB"><span class="toc-text">主存储器空间的共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%82%A8%E5%99%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%89%A9%E5%85%85"><span class="toc-text">主存储器空间的扩充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AE%B5%E5%BC%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-text">段式程序设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E5%88%B6%E4%BD%9C%E6%96%B9%E6%B3%95"><span class="toc-text">超链接的制作方法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80"><span class="toc-text">存储管理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E5%99%A8%E7%A1%AC%E4%BB%B6"><span class="toc-text">存储器硬件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84"><span class="toc-text">存储组织结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-text">存储管理的功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E9%85%8D%E5%92%8C%E5%9B%9E%E6%94%B6"><span class="toc-text">分配和回收</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%A9%E5%85%85%E5%AE%B9%E9%87%8F-%E2%80%94%E2%80%94-%E4%B8%BB%E5%AD%98%E7%9A%84%E6%89%A9%E5%85%85"><span class="toc-text">扩充容量 —— 主存的扩充</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B1%E4%BA%AB"><span class="toc-text">共享</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%9D%E6%8A%A4"><span class="toc-text">保护</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95"><span class="toc-text">管理方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80"><span class="toc-text">逻辑地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%9C%B0%E5%9D%80"><span class="toc-text">物理地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E5%A4%8D%E7%94%A8"><span class="toc-text">主存储器的复用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">存储管理模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2"><span class="toc-text">地址转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%82%A8%E5%99%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E5%85%B1%E4%BA%AB"><span class="toc-text">主存储器空间的共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%82%A8%E5%99%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%89%A9%E5%85%85"><span class="toc-text">主存储器空间的扩充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AE%B5%E5%BC%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-text">段式程序设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E5%88%B6%E4%BD%9C%E6%96%B9%E6%B3%95"><span class="toc-text">超链接的制作方法</span></a></li></ol>
     </div>
   </section>
 
@@ -4144,7 +4165,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/08/逻辑地址/","name":"存储管理"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"存储管理","description":"","datePublished":"2022-05-08T13:04:04.000Z","dateModified":"2022-05-08T14:21:19.822Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/","wordCount":0,"keywords":"OS","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/08/逻辑地址/","name":"1-存储管理"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"1-存储管理","description":"","datePublished":"2022-05-08T13:04:04.000Z","dateModified":"2022-05-09T02:31:28.601Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/","wordCount":0,"keywords":"OS","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
