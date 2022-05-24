@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/os/"/>
+  <link rel="canonical" href="http://example.com/tags/ctraps/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,13 +31,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Tag: OS - avaleph's blog</title>
+  <title>Tag: CTraps - avaleph's blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="随笔 - zhentao han - avaleph's blog">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="avaleph&#39;s blog">
-<meta property="og:url" content="http://example.com/tags/OS/index.html">
+<meta property="og:url" content="http://example.com/tags/CTraps/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
 <meta property="og:description" content="随笔">
 <meta property="og:locale" content="en_US">
@@ -2668,14 +2668,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
       
     
     
@@ -2683,7 +2675,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/10/5-%E9%A1%B5%E5%BC%8F%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/24/C-Traps-Pitfalls-1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="avaleph's blog">
   </span>
@@ -2701,19 +2693,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/10/5-%E9%A1%B5%E5%BC%8F%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"  itemprop="url">
-        5-页式虚拟内存管理
+      <a href="/2022/05/24/C-Traps-Pitfalls-1/"  itemprop="url">
+        C Traps & Pitfalls - 1
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        基本思想把进程全部页面装入虚拟存储器，执行时先把部分页面装入实际内存，然后根据执行的行为，动态调入不在主存的页，同时进行必要的页面调出。
-是现代OS的主流存储管理技术
-首次只把进程第一页信息装入主存，称为请求页式存储管理。
-页式虚拟存储管理的页表需要扩充页表项每页的虚拟地址，实际地址。
-主存驻留标志，写回标志（没有被修改不需要写回），保护标志（存储保护用），引用标志（页面淘汰使用），可移动标...
+        C程序是由基本的组成单元—— “ 符号 “ 组成的，编译器中将程序分为一个一个符号的部分，一般称之为 ” 词法分析器 “ 。符号之间的空白（空格符，制表符，和换行符）都会被忽略。
+&#x3D;不同于&#x3D;&#x3D;编译器在发现类似 e1 = e2 的语句出现在循环语句的条件判断部分时，会发出警告信息。为了避免不必要的警告，我们应该显式的进行比较：
+12345if (x = y) 	d...
       
     
   </div>
@@ -2721,244 +2711,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-05-10T20:57:22+08:00">2022-05-10</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-05-24T20:50:14+08:00">2022-05-24</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2022/05/10/5-%E9%A1%B5%E5%BC%8F%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/10/4-%E5%88%86%E9%A1%B5%E7%AE%A1%E7%90%86/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="avaleph's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="avaleph's blog">
-    <meta itemprop="description" content="随笔">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/10/4-%E5%88%86%E9%A1%B5%E7%AE%A1%E7%90%86/"  itemprop="url">
-        4-分页管理(页表)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-10T10:45:22+08:00">2022-05-10</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/10/4-%E5%88%86%E9%A1%B5%E7%AE%A1%E7%90%86/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/10/3-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="avaleph's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="avaleph's blog">
-    <meta itemprop="description" content="随笔">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/10/3-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"  itemprop="url">
-        3-内存管理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        只读代码段中的分区.init —— 程序初始化时调用的函数。
-.text —— 用户程序的机器代码。
-.rodata —— 只读数据。
-.data —— 已经初始化的全局变量和静态变量。
-.bss —— 未初始化以及所有初始化为0的全局变量和静态变量。
-高速缓存存储器的分级L1-L3级别的Cache，从低到高，速度依次降低，成本随之降低。其中总线的改善比设置L3级别的Cache更有利于提升系...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-10T09:45:56+08:00">2022-05-10</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/10/3-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="avaleph's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="avaleph's blog">
-    <meta itemprop="description" content="随笔">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/"  itemprop="url">
-        2-虚拟存储概述
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        虚拟存储器虚存的原因主存容量具有限制，用户在编程的时候必须考虑主存容量限制。同时，多道程序设计的道数也受到限制。
-程序执行的过程具有顺序性和循环性，在访问内存时具有空间局部性的特点，某一阶段的执行也具有空间局部性的行为。
-因此，可以考虑只调入部分进程内容。
-虚存的基本思想存储管理先把进程的所有信息放到辅存中（相当于扩大了主存的容量），执行的时候先把一部分装入主存，以后根据执行行为随用随调入。...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-08T22:04:04+08:00">2022-05-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="avaleph's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="avaleph's blog">
-    <meta itemprop="description" content="随笔">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/"  itemprop="url">
-        1-存储管理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        存储管理基础存储器硬件存储器的功能：保存数据，存储器的发展目标是高速、大容量和小体积。
-静态存储器（SRAM）：读写速度快，生产成本高，多用于容量较小的高速缓冲存储器。- Cache 
-动态存储器（DRAM）：读写速度较慢，集成度高，生产成本低，多用于容量较大的主存。
-存储组织结构存储组织的功能是在存储技术和CPU寻址技术许可的范围内组织合理的存储结构，其依据是访问速度匹配关系、容量要求和价...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-08T21:04:04+08:00">2022-05-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/' itemprop="url">
+          <a class='readmore' href='/2022/05/24/C-Traps-Pitfalls-1/' itemprop="url">
             Read More
           </a>
         </div>
@@ -4289,7 +4047,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/OS/","name":"OS"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"avaleph's blog","url":"http://example.com/","keywords":null,"description":"随笔","author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"随笔"},"publisher":{"@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/CTraps/","name":"CTraps"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"avaleph's blog","url":"http://example.com/","keywords":null,"description":"随笔","author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"随笔"},"publisher":{"@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
 
 
 

@@ -1909,7 +1909,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1652154572192),
+    lastupdate: new Date(1653403085537),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2676,9 +2676,129 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/24/C-Traps-Pitfalls-1/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="avaleph's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="avaleph's blog">
+    <meta itemprop="description" content="随笔">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/05/24/C-Traps-Pitfalls-1/"  itemprop="url">
+        C Traps & Pitfalls - 1
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        C程序是由基本的组成单元—— “ 符号 “ 组成的，编译器中将程序分为一个一个符号的部分，一般称之为 ” 词法分析器 “ 。符号之间的空白（空格符，制表符，和换行符）都会被忽略。
+&#x3D;不同于&#x3D;&#x3D;编译器在发现类似 e1 = e2 的语句出现在循环语句的条件判断部分时，会发出警告信息。为了避免不必要的警告，我们应该显式的进行比较：
+12345if (x = y) 	d...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-05-24T20:50:14+08:00">2022-05-24</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/05/24/C-Traps-Pitfalls-1/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/10/5-%E9%A1%B5%E5%BC%8F%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="avaleph's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="avaleph's blog">
+    <meta itemprop="description" content="随笔">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/05/10/5-%E9%A1%B5%E5%BC%8F%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"  itemprop="url">
+        5-页式虚拟内存管理
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        基本思想把进程全部页面装入虚拟存储器，执行时先把部分页面装入实际内存，然后根据执行的行为，动态调入不在主存的页，同时进行必要的页面调出。
+是现代OS的主流存储管理技术
+首次只把进程第一页信息装入主存，称为请求页式存储管理。
+页式虚拟存储管理的页表需要扩充页表项每页的虚拟地址，实际地址。
+主存驻留标志，写回标志（没有被修改不需要写回），保护标志（存储保护用），引用标志（页面淘汰使用），可移动标...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-05-10T20:57:22+08:00">2022-05-10</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/05/10/5-%E9%A1%B5%E5%BC%8F%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3137,7 +3257,7 @@ $ ls –lt &#x2F;&#x2F;命令选项可以组合
 
 
     <div class='content'>
-      <a href="/tags/BASIC/" style="font-size: 14px; color: #999">BASIC</a> <a href="/tags/OS/" style="font-size: 24px; color: #555">OS</a> <a href="/tags/UNIX/" style="font-size: 14px; color: #999">UNIX</a>
+      <a href="/tags/BASIC/" style="font-size: 14px; color: #999">BASIC</a> <a href="/tags/CTraps/" style="font-size: 14px; color: #999">CTraps</a> <a href="/tags/OS/" style="font-size: 24px; color: #555">OS</a> <a href="/tags/UNIX/" style="font-size: 14px; color: #999">UNIX</a>
     </div>
   </section>
 
