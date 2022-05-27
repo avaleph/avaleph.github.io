@@ -39,11 +39,11 @@
 <meta property="og:title" content="C-Traps-Pitfalls-2">
 <meta property="og:url" content="http://example.com/2022/05/25/C-Traps-Pitfalls-2/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
-<meta property="og:description" content="考虑优先级问题比较常见的 1if (flags &amp; FLAG !&#x3D; 0) ...  因为 !&#x3D; 优先级高于 &amp;，所以上面的式子得不到正确的结果。被解释为 1if (flags &amp; (FLAG !&#x3D; 0)) ...">
+<meta property="og:description" content="函数的声明以下的声明 float (*h) (); 表示 h 是一个指向返回值为浮点类型的函数的指针。 因此 float (*) (); 表示一个指向返回值为浮点类型的函数的指针的类型转换符。 那么我们怎样调用  h 对应的函数呢？ 用 (*h) (); 考虑优先级问题比较常见的 1if (flags &amp; FLAG !&#x3D; 0) ...  因为 !&#x3D; 优先级高于 &amp;，所以上面的式子得">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-25T00:27:25.000Z">
-<meta property="article:modified_time" content="2022-05-25T02:00:45.733Z">
+<meta property="article:modified_time" content="2022-05-27T16:22:55.883Z">
 <meta property="article:author" content="zhentao han">
 <meta property="article:tag" content="CTraps">
 <meta name="twitter:card" content="summary">
@@ -1912,7 +1912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653643630719),
+    lastupdate: new Date(1653668586090),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2728,12 +2728,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="考虑优先级问题"><a href="#考虑优先级问题" class="headerlink" title="考虑优先级问题"></a>考虑优先级问题</h3><p>比较常见的</p>
+    <h3 id="函数的声明"><a href="#函数的声明" class="headerlink" title="函数的声明"></a>函数的声明</h3><p>以下的声明</p>
+<p><code>float (*h) ();</code> 表示 h 是一个指向返回值为浮点类型的函数的指针。</p>
+<p>因此 <code>float (*) ();</code> 表示一个指向返回值为浮点类型的函数的指针的类型转换符。</p>
+<p>那么我们怎样调用  <code>h</code> 对应的函数呢？</p>
+<p>用 <code>(*h) ();</code></p>
+<h3 id="考虑优先级问题"><a href="#考虑优先级问题" class="headerlink" title="考虑优先级问题"></a>考虑优先级问题</h3><p>比较常见的</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (flags &amp; FLAG != <span class="number">0</span>) ...</span><br></pre></td></tr></table></figure>
 
 <p>因为 <code>!=</code> 优先级高于 <code>&amp;</code>，所以上面的式子得不到正确的结果。被解释为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (flags &amp; (FLAG != 0)) ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (flags &amp; (FLAG != <span class="number">0</span>)) ...</span><br></pre></td></tr></table></figure>
 
+
+
+<p>另外，不幸的是 </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">r = hi &lt;&lt; <span class="number">4</span> + low;</span><br></pre></td></tr></table></figure>
+
+<p>并不意味着将 <code>hi</code> 左移4位后加上 <code>low</code> ，而是：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">r = hi &lt;&lt; (<span class="number">4</span> + low);</span><br></pre></td></tr></table></figure>
+
+<p>我们要记住最重要的两点是：</p>
+<p>任何一个逻辑运算符的优先级低于任何一个关系运算符。</p>
+<p>移位运算符的优先级比算数运算符的优先级低，但是比关系运算符要高。</p>
+<p>在如下一个读取文件的例子中：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (c = getc(in) != EOF) </span><br><span class="line">	putc(c,out);</span><br></pre></td></tr></table></figure>
+
+<p>由于赋值运算符的优先级要低于任何一个比较运算符，因此 C 的值实际上是函数 <code>getc(in)</code> 的值与 <code>EOF</code> 比较之后的结果。读取的值在这里就是一个临时变量，在与 <code>EOF</code> 比较之后就被”丢弃”了。</p>
+<p>上述的例子应该写为：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> ((c = getc(in)) != EOF) </span><br><span class="line">	putc(c,out);</span><br></pre></td></tr></table></figure>
+
+<h3 id="注意作为语句结束标志的分号"><a href="#注意作为语句结束标志的分号" class="headerlink" title="注意作为语句结束标志的分号"></a>注意作为语句结束标志的分号</h3><p>例如：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (state);</span><br><span class="line">	step;</span><br></pre></td></tr></table></figure>
+
+<p><code>if</code> 语句之后的分号，会结束语句的作用域，相当于直接进行了 <code>step</code> 操作。</p>
+<h3 id="注意switch语句"><a href="#注意switch语句" class="headerlink" title="注意switch语句"></a>注意switch语句</h3><p>在c语言中，switch 语句中的  <code>case</code> 仅仅是一个标识符，不同于 <code>Pascal</code> 语言，如果缺少了 <code>case</code> 语句后面的 <code>break</code>，那么程序会一直执行所有的 <code>case</code> 语句。</p>
 
 
   </div>
@@ -2770,10 +2798,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-25T10:00:45+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-28T00:22:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 25, 2022</p>
+    <p>更新于：May 28, 2022</p>
   </a>
 </div>
 
@@ -2927,7 +2955,7 @@ P2
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E8%99%91%E4%BC%98%E5%85%88%E7%BA%A7%E9%97%AE%E9%A2%98"><span class="toc-text">考虑优先级问题</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="toc-text">函数的声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E8%99%91%E4%BC%98%E5%85%88%E7%BA%A7%E9%97%AE%E9%A2%98"><span class="toc-text">考虑优先级问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BD%9C%E4%B8%BA%E8%AF%AD%E5%8F%A5%E7%BB%93%E6%9D%9F%E6%A0%87%E5%BF%97%E7%9A%84%E5%88%86%E5%8F%B7"><span class="toc-text">注意作为语句结束标志的分号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8Fswitch%E8%AF%AD%E5%8F%A5"><span class="toc-text">注意switch语句</span></a></li></ol>
     </div>
   </section>
 
@@ -4149,7 +4177,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/25/C-Traps-Pitfalls-2/","name":"C-Traps-Pitfalls-2"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C-Traps-Pitfalls-2","description":"","datePublished":"2022-05-25T00:27:25.000Z","dateModified":"2022-05-25T02:00:45.733Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/25/C-Traps-Pitfalls-2/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/25/C-Traps-Pitfalls-2/","wordCount":0,"keywords":"CTraps","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/25/C-Traps-Pitfalls-2/","name":"C-Traps-Pitfalls-2"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C-Traps-Pitfalls-2","description":"","datePublished":"2022-05-25T00:27:25.000Z","dateModified":"2022-05-27T16:22:55.883Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/25/C-Traps-Pitfalls-2/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/25/C-Traps-Pitfalls-2/","wordCount":0,"keywords":"CTraps","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

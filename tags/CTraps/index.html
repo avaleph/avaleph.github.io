@@ -1909,7 +1909,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653643630719),
+    lastupdate: new Date(1653668586090),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2703,14 +2703,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        考虑优先级问题比较常见的
+        函数的声明以下的声明
+float (*h) (); 表示 h 是一个指向返回值为浮点类型的函数的指针。
+因此 float (*) (); 表示一个指向返回值为浮点类型的函数的指针的类型转换符。
+那么我们怎样调用  h 对应的函数呢？
+用 (*h) ();
+考虑优先级问题比较常见的
 1if (flags &amp; FLAG != 0) ...
 
-因为 != 优先级高于 &amp;，所以上面的式子得不到正确的结果。被解释为
-1if (flags &amp; (FLAG != 0)) ...
-
-
-
+因为 != 优先级高于 &amp;，所以上面的...
       
     
   </div>
