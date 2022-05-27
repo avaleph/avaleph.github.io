@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2022/05/08/基本操作/"/>
+  <link rel="canonical" href="http://example.com/2022/05/27/os-homework5/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,21 +31,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>1-基本操作 - avaleph's blog</title>
-  <meta name="keywords" content="UNIX,null">
+  <title>OS-homework5 - avaleph's blog</title>
+  <meta name="keywords" content="OShw,null">
   <meta desc name="description" content="随笔 - zhentao han - avaleph's blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="1-基本操作">
-<meta property="og:url" content="http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:title" content="OS-homework5">
+<meta property="og:url" content="http://example.com/2022/05/27/OS-homework5/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
-<meta property="og:description" content="基本操作显示文件列表文件列表ls$ ls $ ls –l &#x2F;&#x2F;详细信息列表 $ ls –t &#x2F;&#x2F;按修改时间排序 $ ls –lt &#x2F;&#x2F;命令选项可以组合 显示文件catcat [OPINION]… [FILE]… 后面加多个文件，显示所有的文件内容，如果没有文件，则读入标准输入，显示在标准输出上。 移动文件 文件复制cpcp file1 f">
+<meta property="og:description" content="1.Q：有五个进程P1、P2、P3、P4、P5，它们同时依次进入就绪队列，它们的优先数和需要的处理器时间如下表    进程 处理器时间 优先级（越小优先级越高）    P1 10 3   P2 1 1   P3 2 3   P4 1 4   P5 5 2   忽略进行调度等所花费的时间，回答下列问题:  a. 写出采用“先来先服务”、“短作业（进程）优先”、“非抢占式的优先数”和“轮转法” 等调度">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-05-08T14:23:53.000Z">
-<meta property="article:modified_time" content="2022-05-09T03:59:36.270Z">
+<meta property="article:published_time" content="2022-05-27T09:25:49.000Z">
+<meta property="article:modified_time" content="2022-05-27T09:26:15.928Z">
 <meta property="article:author" content="zhentao han">
-<meta property="article:tag" content="UNIX">
+<meta property="article:tag" content="OShw">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2662,7 +2662,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/27/OS-homework5/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="avaleph's blog">
   </span>
@@ -2683,7 +2683,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        1-基本操作
+        OS-homework5
       </h1>
       <div class='new-meta-box'>
         
@@ -2704,10 +2704,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-08T22:23:53+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-27T17:25:49+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：May 8, 2022</p>
+    <p>发布于：May 27, 2022</p>
   </a>
 </div>
 
@@ -2728,31 +2728,238 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><h4 id="显示文件列表文件列表ls"><a href="#显示文件列表文件列表ls" class="headerlink" title="显示文件列表文件列表ls"></a>显示文件列表文件列表ls</h4><p>$ ls</p>
-<p>$ ls –l &#x2F;&#x2F;详细信息列表</p>
-<p>$ ls –t &#x2F;&#x2F;按修改时间排序</p>
-<p>$ ls –lt &#x2F;&#x2F;命令选项可以组合</p>
-<h4 id="显示文件cat"><a href="#显示文件cat" class="headerlink" title="显示文件cat"></a>显示文件cat</h4><p>cat [OPINION]… [FILE]…</p>
-<p>后面加多个文件，显示所有的文件内容，如果没有文件，则读入标准输入，显示在标准输出上。</p>
-<p>移动文件</p>
-<h4 id="文件复制cp"><a href="#文件复制cp" class="headerlink" title="文件复制cp"></a>文件复制cp</h4><p><code>cp file1 file2</code> 复制源file1的内容到目标文件file2上</p>
-<p><code>cp file* foldername</code> 复制多个文件到一个目录</p>
-<h4 id="文件移动mv"><a href="#文件移动mv" class="headerlink" title="文件移动mv"></a>文件移动mv</h4><p><code>mv file1 file2</code> 把一个文件的名字从file1改成file2</p>
-<p><code>mv file* foldername</code> 移动多个文件到一个目录</p>
-<h4 id="文件删除rm"><a href="#文件删除rm" class="headerlink" title="文件删除rm"></a>文件删除rm</h4><p><code>rm filename</code> 删除file，并且不加确认。</p>
-<h3 id="针对文本文件的命令"><a href="#针对文本文件的命令" class="headerlink" title="针对文本文件的命令"></a>针对文本文件的命令</h3><h4 id="排序输出sort"><a href="#排序输出sort" class="headerlink" title="排序输出sort"></a>排序输出sort</h4><p>将输入的所有文件排序后输出，比较原则是从首字符向后按照ASCLL码值进行比较。最后升序输出。</p>
-<h4 id="比较文件diff与cmp"><a href="#比较文件diff与cmp" class="headerlink" title="比较文件diff与cmp"></a>比较文件diff与cmp</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diff file1 file2</span><br></pre></td></tr></table></figure>
-
-<p>该命令比较两份文件的不同并且输出。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmp file1 file2</span><br></pre></td></tr></table></figure>
-
-<p>该命令比较后，返回第一个不相同的字符和编号。</p>
-<h4 id="统计文件wc"><a href="#统计文件wc" class="headerlink" title="统计文件wc"></a>统计文件wc</h4><p>统计文件中的字节数，字数，行数并将统计结果输出。</p>
-<h3 id="文件目录命令"><a href="#文件目录命令" class="headerlink" title="文件目录命令"></a>文件目录命令</h3><p>$ pwd 显示当前路径（目录）</p>
-<p>$ cd 改变当前工作目录，或返回个人主目录</p>
-<p>. 和..目录 前者为当前目录，后者为当前的父目录。</p>
-<p>$ mkdir 创建子目录</p>
-<p>$ rmdir 删除子目录</p>
+    <h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><h4 id="Q："><a href="#Q：" class="headerlink" title="Q："></a>Q：</h4><p>有五个进程P1、P2、P3、P4、P5，它们同时依次进入就绪队列，它们的优先数和需要的处理器时间如下表</p>
+<table>
+<thead>
+<tr>
+<th align="center">进程</th>
+<th align="center">处理器时间</th>
+<th align="center">优先级（越小优先级越高）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">P1</td>
+<td align="center">10</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">P4</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">P5</td>
+<td align="center">5</td>
+<td align="center">2</td>
+</tr>
+</tbody></table>
+<p>忽略进行调度等所花费的时间，回答下列问题: </p>
+<p>a. 写出采用“先来先服务”、“短作业（进程）优先”、“非抢占式的优先数”和“轮转法” 等调度算法，进程执行的次序。（其中轮转法的时间片为2） </p>
+<p>b. 分别计算上述算法中各进程的周转时间和等待时间，以及平均周转时间。</p>
+<h4 id="A："><a href="#A：" class="headerlink" title="A："></a>A：</h4><h4 id="a"><a href="#a" class="headerlink" title="a."></a>a.</h4><p>先来先服务：P1 - P2 - P3 - P4 - P5</p>
+<p>短作业优先：P2 - P4 - P3 - P5 - P1</p>
+<p>非抢占式的优先数：P2 - P5 - P1 - P3 - P4</p>
+<p>轮转法：P1 - P2 - P3 - P4 - P5 - P1 - P5 - P1 - P5 - P1</p>
+<h4 id="b"><a href="#b" class="headerlink" title="b."></a>b.</h4><p>先来先服务：</p>
+<table>
+<thead>
+<tr>
+<th align="center">进程</th>
+<th align="center">周转时间</th>
+<th align="center">等待时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">P1</td>
+<td align="center">10</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">11</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">13</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">P4</td>
+<td align="center">14</td>
+<td align="center">13</td>
+</tr>
+<tr>
+<td align="center">P5</td>
+<td align="center">19</td>
+<td align="center">14</td>
+</tr>
+</tbody></table>
+<p>先来先服务的平均周转时间：( 10 + 11 + 13 + 14 + 19 ) ÷ 5 &#x3D; 13.4 </p>
+<p>短作业优先：</p>
+<table>
+<thead>
+<tr>
+<th align="center">进程</th>
+<th align="center">周转时间</th>
+<th align="center">等待时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">P1</td>
+<td align="center">19</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">4</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">P4</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">P5</td>
+<td align="center">9</td>
+<td align="center">14</td>
+</tr>
+</tbody></table>
+<p>短作业优先的平均周转时间：( 19 + 1 + 4 + 2 + 9 ) ÷ 5 &#x3D; 7 </p>
+<p>非抢占式优先数：</p>
+<table>
+<thead>
+<tr>
+<th align="center">进程</th>
+<th align="center">周转时间</th>
+<th align="center">等待时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">P1</td>
+<td align="center">16</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">18</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">P4</td>
+<td align="center">19</td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center">P5</td>
+<td align="center">6</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<p>非抢占式优先数的平均周转时间：( 16 + 1 + 18 + 19 + 6 ) ÷ 5 &#x3D; 12 </p>
+<p>时间片轮转（时间片为2）：</p>
+<table>
+<thead>
+<tr>
+<th align="center">进程</th>
+<th align="center">周转时间</th>
+<th align="center">等待时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">P1</td>
+<td align="center">19</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">3</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">5</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">P4</td>
+<td align="center">6</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">P5</td>
+<td align="center">15</td>
+<td align="center">10</td>
+</tr>
+</tbody></table>
+<p>时间片轮转（时间片为2）的平均周转时间：( 19 + 3 + 5 + 6 + 15 ) ÷ 5 &#x3D; 9.6 </p>
+<h3 id="2-死锁产生的四个必要条件是什么？"><a href="#2-死锁产生的四个必要条件是什么？" class="headerlink" title="2. 死锁产生的四个必要条件是什么？"></a>2. 死锁产生的四个必要条件是什么？</h3><p>（1）互斥条件：进程要求对所分配的资源进行排它性控制，即在一段时间内某资源仅为一进程所占用。</p>
+<p>（2）请求和保持条件：当进程因请求资源而阻塞时，对已获得的资源保持不放。</p>
+<p>（3）不剥夺条件：进程已获得的资源在未使用完之前，不能剥夺，只能在使用完时由自己释放。</p>
+<p>（4）环路等待条件：在发生死锁时，必然存在一个进程–资源的环形链。</p>
+<h3 id="3-某系统中有n个进程和m台打印机，系统约定：打印机只能一台一台地申请、一台一台地-释放，每个进程需要同时使用的打印机台数不超过m。如果n个进程同时需要使用打印机的-总数小于m-n，试讨论，该系统可能发生死锁吗-并简述理由。"><a href="#3-某系统中有n个进程和m台打印机，系统约定：打印机只能一台一台地申请、一台一台地-释放，每个进程需要同时使用的打印机台数不超过m。如果n个进程同时需要使用打印机的-总数小于m-n，试讨论，该系统可能发生死锁吗-并简述理由。" class="headerlink" title="3. 某系统中有n个进程和m台打印机，系统约定：打印机只能一台一台地申请、一台一台地 释放，每个进程需要同时使用的打印机台数不超过m。如果n个进程同时需要使用打印机的 总数小于m+n，试讨论，该系统可能发生死锁吗?并简述理由。"></a>3. 某系统中有n个进程和m台打印机，系统约定：打印机只能一台一台地申请、一台一台地 释放，每个进程需要同时使用的打印机台数不超过m。如果n个进程同时需要使用打印机的 总数小于m+n，试讨论，该系统可能发生死锁吗?并简述理由。</h3><h4 id="A：-1"><a href="#A：-1" class="headerlink" title="A："></a>A：</h4><p>由题意可以知道，如果发生死锁，每个进程得到的打印机数小于需要数目，一共有N个进程，那么死锁最大得到的打印机数就小于 <code>m+n-n = m</code> 而此时有m个打印机，一定大于死锁时最大得到打印机数目，因此不可能发生死锁。</p>
+<h3 id="4-线程的基本概念是什么？引入线程的好处是什么？"><a href="#4-线程的基本概念是什么？引入线程的好处是什么？" class="headerlink" title="4. 线程的基本概念是什么？引入线程的好处是什么？"></a>4. 线程的基本概念是什么？引入线程的好处是什么？</h3><p>线程是比进程更小的执行单位，它包含在进程中 ，一个进程执行过程中可能产生多个线程，同一类型的多个线程共享同一块内存空间和系统资源。</p>
+<p>引入线程能减少程序在并发执行时所付出的时空开销，使OS具有更好的并发性</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h3><h4 id="Q：-1"><a href="#Q：-1" class="headerlink" title="Q："></a>Q：</h4><p>一个系统有4个进程和5个可分配资源，当前分配和最大需求如下： </p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">已分配资源</th>
+<th align="center">最大需求量</th>
+<th align="center">可用资源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">进程A</td>
+<td align="center">10211</td>
+<td align="center">11213</td>
+<td align="center">00x12</td>
+</tr>
+<tr>
+<td align="center">进程B</td>
+<td align="center">20110</td>
+<td align="center">22210</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">进程C</td>
+<td align="center">11010</td>
+<td align="center">21310</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">进程D</td>
+<td align="center">11110</td>
+<td align="center">11221</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>若保持该状态是安全状态，那么x的最小值是多少</p>
+<h4 id="A：-2"><a href="#A：-2" class="headerlink" title="A："></a>A：</h4><p>x 为 1</p>
+<p>当 x 为 0 时，可用资源无法满足任一进程的需求，不能保持安全状态。</p>
+<p>当 x 为 1 时，进程 D 可以满足需要，开始运行，结束之后可用资源为 11222 ，进程 A 可以满足需要，开始运行，结束后可用资源为 21433 ，此时 C 可以满足需要，开始运行，结束后资源为 32443 ，进程 B 可以满足需要，开始运行，所有进程执行完毕。</p>
 
 
   </div>
@@ -2772,7 +2979,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/>http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/2022/05/27/OS-homework5/>http://example.com/2022/05/27/OS-homework5/</a></p>
               
             
           </blockquote>
@@ -2789,10 +2996,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-09T11:59:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-27T17:26:15+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 9, 2022</p>
+    <p>更新于：May 27, 2022</p>
   </a>
 </div>
 
@@ -2801,8 +3008,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/UNIX/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>UNIX</p></a></div>
-  <span hidden itemprop="keywords">UNIX</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/OShw/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>OShw</p></a></div>
+  <span hidden itemprop="keywords">OShw</span>
 
 
         
@@ -2815,7 +3022,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/&title=1-基本操作 - avaleph's blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/27/OS-homework5/&title=OS-homework5 - avaleph's blog&summary="
           
           >
           
@@ -2827,7 +3034,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/&title=1-基本操作 - avaleph's blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/27/OS-homework5/&title=OS-homework5 - avaleph's blog&summary="
           
           >
           
@@ -2839,7 +3046,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/&title=1-基本操作 - avaleph's blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/27/OS-homework5/&title=OS-homework5 - avaleph's blog&summary="
           
           >
           
@@ -2872,19 +3079,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/05/09/%E5%8D%95%E4%BD%8D%E6%8D%A2%E7%AE%97/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>1-数据的换算</p>
-          <p class='content'>字节（B） &#x3D; 8bit 
-字（word）&#x3D; 4bit
-位（b）&#x3D; 1bit
-一个英文字母（不分大小写）占一个字节的空间，一个中文汉字占两个字节的空间。英文标点占一...</p>
-        </a>
       
-      
-        <a class='next' href='/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/'>
-          <p class='title'>2-虚拟存储概述<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>虚拟存储器虚存的原因主存容量具有限制，用户在编程的时候必须考虑主存容量限制。同时，多道程序设计的道数也受到限制。
-程序执行的过程具有顺序性和循环性，在访问内存时具有空间局部性的特点，某一阶段的执...</p>
+        <a class='next' href='/2022/05/25/C-Traps-Pitfalls-2/'>
+          <p class='title'>C-Traps-Pitfalls-2<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>考虑优先级问题比较常见的
+1if (flags &amp; FLAG != 0) ...
+
+因为 != 优先级高于 &amp;，所以上面的式子得不到正确的结果。被解释为
+1if (flags &...</p>
         </a>
       
     </div>
@@ -2900,7 +3102,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2022/05/27/OS-homework5/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2933,7 +3135,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8ls"><span class="toc-text">显示文件列表文件列表ls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6cat"><span class="toc-text">显示文件cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%A4%8D%E5%88%B6cp"><span class="toc-text">文件复制cp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%A7%BB%E5%8A%A8mv"><span class="toc-text">文件移动mv</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4rm"><span class="toc-text">文件删除rm</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%92%88%E5%AF%B9%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-text">针对文本文件的命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E8%BE%93%E5%87%BAsort"><span class="toc-text">排序输出sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6diff%E4%B8%8Ecmp"><span class="toc-text">比较文件diff与cmp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E6%96%87%E4%BB%B6wc"><span class="toc-text">统计文件wc</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E5%91%BD%E4%BB%A4"><span class="toc-text">文件目录命令</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1"><span class="toc-text">1.</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Q%EF%BC%9A"><span class="toc-text">Q：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#A%EF%BC%9A"><span class="toc-text">A：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#a"><span class="toc-text">a.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b"><span class="toc-text">b.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%AD%BB%E9%94%81%E4%BA%A7%E7%94%9F%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">2. 死锁产生的四个必要条件是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%90%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9C%89n%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%92%8Cm%E5%8F%B0%E6%89%93%E5%8D%B0%E6%9C%BA%EF%BC%8C%E7%B3%BB%E7%BB%9F%E7%BA%A6%E5%AE%9A%EF%BC%9A%E6%89%93%E5%8D%B0%E6%9C%BA%E5%8F%AA%E8%83%BD%E4%B8%80%E5%8F%B0%E4%B8%80%E5%8F%B0%E5%9C%B0%E7%94%B3%E8%AF%B7%E3%80%81%E4%B8%80%E5%8F%B0%E4%B8%80%E5%8F%B0%E5%9C%B0-%E9%87%8A%E6%94%BE%EF%BC%8C%E6%AF%8F%E4%B8%AA%E8%BF%9B%E7%A8%8B%E9%9C%80%E8%A6%81%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E7%9A%84%E6%89%93%E5%8D%B0%E6%9C%BA%E5%8F%B0%E6%95%B0%E4%B8%8D%E8%B6%85%E8%BF%87m%E3%80%82%E5%A6%82%E6%9E%9Cn%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%97%B6%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9A%84-%E6%80%BB%E6%95%B0%E5%B0%8F%E4%BA%8Em-n%EF%BC%8C%E8%AF%95%E8%AE%A8%E8%AE%BA%EF%BC%8C%E8%AF%A5%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%83%BD%E5%8F%91%E7%94%9F%E6%AD%BB%E9%94%81%E5%90%97-%E5%B9%B6%E7%AE%80%E8%BF%B0%E7%90%86%E7%94%B1%E3%80%82"><span class="toc-text">3. 某系统中有n个进程和m台打印机，系统约定：打印机只能一台一台地申请、一台一台地 释放，每个进程需要同时使用的打印机台数不超过m。如果n个进程同时需要使用打印机的 总数小于m+n，试讨论，该系统可能发生死锁吗?并简述理由。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#A%EF%BC%9A-1"><span class="toc-text">A：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%BC%95%E5%85%A5%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%A5%BD%E5%A4%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">4. 线程的基本概念是什么？引入线程的好处是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5"><span class="toc-text">5.</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Q%EF%BC%9A-1"><span class="toc-text">Q：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#A%EF%BC%9A-2"><span class="toc-text">A：</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -4155,7 +4357,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/08/基本操作/","name":"1-基本操作"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"1-基本操作","description":"","datePublished":"2022-05-08T14:23:53.000Z","dateModified":"2022-05-09T03:59:36.270Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/","wordCount":0,"keywords":"UNIX","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/27/OS-homework5/","name":"OS-homework5"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"OS-homework5","description":"","datePublished":"2022-05-27T09:25:49.000Z","dateModified":"2022-05-27T09:26:15.928Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/27/OS-homework5/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/27/OS-homework5/","wordCount":0,"keywords":"OShw","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
