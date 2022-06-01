@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.0.0-alpha.111">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/unix/"/>
+  
+  <link rel="canonical" href="http://example.com/2022/05/29/贪心算法/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,18 +31,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Tag: UNIX - avaleph's blog</title>
-  <meta name="keywords" content="null">
+  <title>贪心算法 - avaleph's blog</title>
+  <meta name="keywords" content="Algorithm,null">
   <meta desc name="description" content="随笔 - zhentao han - avaleph's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="avaleph&#39;s blog">
-<meta property="og:url" content="http://example.com/tags/UNIX/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="贪心算法">
+<meta property="og:url" content="http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
-<meta property="og:description" content="随笔">
+<meta property="og:description" content="贪心算法找零钱假设1元、2元、5元、10元、20元、50元、100元的纸币分别有c0, c1, c2, c3, c4, c5, c6张。现在要用这些钱来支付K元，至少要用多少张纸币？ 贪心策略: 用贪心算法的思想，很显然，每一步尽可能用面值大的纸币即可。 区间调度问题给你很多形如 [start, end] 的闭区间，请你设计一个算法，算出这些区间中最多有几个互不相交的区间。 贪心策略: 先对于所有">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2022-05-29T12:42:19.000Z">
+<meta property="article:modified_time" content="2022-05-29T13:26:52.235Z">
 <meta property="article:author" content="zhentao han">
+<meta property="article:tag" content="Algorithm">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2604,7 +2607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://avaleph-1312277395.cos.ap-beijing.myqcloud.com/wife.jpg"></div>
 
@@ -2657,25 +2660,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="avaleph's blog">
   </span>
@@ -2684,65 +2671,231 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="随笔">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"  itemprop="url">
-        1-基本操作
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        基本操作显示文件列表文件列表ls$ ls
-$ ls –l &#x2F;&#x2F;详细信息列表
-$ ls –t &#x2F;&#x2F;按修改时间排序
-$ ls –lt &#x2F;&#x2F;命令选项可以组合
-显示文件catcat [OPINION]… [FILE]…
-后面加多个文件，显示所有的文件内容，如果没有文件，则读入标准输入，显示在标准输出上。
-移动文件
-文件复制cpcp file...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        贪心算法
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-29T20:42:19+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 29, 2022</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h3 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h3><h4 id="找零钱"><a href="#找零钱" class="headerlink" title="找零钱"></a>找零钱</h4><p>假设1元、2元、5元、10元、20元、50元、100元的纸币分别有<code>c0, c1, c2, c3, c4, c5, c6</code>张。现在要用这些钱来支付K元，至少要用多少张纸币？</p>
+<p><strong>贪心策略</strong>: 用贪心算法的思想，很显然，每一步尽可能用面值大的纸币即可。</p>
+<h4 id="区间调度问题"><a href="#区间调度问题" class="headerlink" title="区间调度问题"></a>区间调度问题</h4><p>给你很多形如 [start, end] 的闭区间，请你设计一个算法，<strong>算出这些区间中最多有几个互不相交的区间</strong>。</p>
+<p><strong>贪心策略</strong>: 先对于所有的区间排序，排序思路是：<strong>先结束的排在前面，相同时间结束的，开始时间早的排在前面</strong>。之后每次寻找区间集合中结束最早的区间 <code>x</code> ，删除所有与 <code>x</code> 相交的区间，重复步骤直到区间集合为空。</p>
+<h4 id="区间选点问题"><a href="#区间选点问题" class="headerlink" title="区间选点问题"></a>区间选点问题</h4><p>给你很多形如 [start, end] 的闭区间，取尽量少的点，使得每个区间内都至少有一个点。</p>
+<p><strong>贪心策略</strong>: 先对于所有的区间排序，排序思路是：<strong>先结束的排在前面，相同时间结束的，开始时间早的排在前面</strong>。之后每次寻找区间集合中结束最早的区间 <code>x</code> ，删除所有与 <code>x</code> 相交的区间，重复步骤直到区间集合为空。（调度问题的变形）</p>
+<h4 id="最小化等待时间（操作系统最短路径延申）"><a href="#最小化等待时间（操作系统最短路径延申）" class="headerlink" title="最小化等待时间（操作系统最短路径延申）"></a>最小化等待时间（操作系统最短路径延申）</h4><p>给定一系列作业的完成需要时间，设计一个算法，计算完成全部作业需要的等待时间（等待时间为所有作业等待时间的总和）。例如：假设得到了一个数组为[1,4,5]表示三个任务的等待时间分别为1，4，5.如果按照[5,1,4]的顺序进行查询，那么总的等待时间将为(0)+(5)+(5+1) &#x3D; 11。、</p>
+<p><strong>贪心策略</strong>: 先对所有的任务进行排序，然后计算累计时间，累计时间的计算方法是，假设一个队列有五个任务，如果第一个需要执行3秒，那么总共等待的时间就加上3*（5-1） &#x3D; 12s。</p>
+<h5 id="time-O-nlog-n"><a href="#time-O-nlog-n" class="headerlink" title="time: O(nlog(n))"></a>time: O(nlog(n))</h5><h5 id="space-O-1"><a href="#space-O-1" class="headerlink" title="space: O(1)"></a>space: O(1)</h5><h4 id="最优装载"><a href="#最优装载" class="headerlink" title="最优装载"></a>最优装载</h4><p>有一批集装箱要装上一艘载重量为c的轮船。其中集装箱i的重量为Wi。最优装载问题要求确定在装载体积不受限制的情况下，将尽可能多的集装箱装上轮船。（意思就是在不超过载重量的情况下最多能装多少）。</p>
+<p><strong>贪心策略</strong>: 当载重量为 c 时，Wi 越小，可装载的数量 n 越大。只要依次悬着最小重量古董，知道不能装为止。把 n 个古董重量从小到大排序，然后根据贪心算法尽可能多的选出前 i 个古董，直到不能装为止，此时达到最优。</p>
+<p><strong>提示:</strong> 如果每个古董都有价值，需要求出最大承载价值，则需要动态规划来解决。</p>
+<h4 id="最优缓存管理-Optimal-Caching"><a href="#最优缓存管理-Optimal-Caching" class="headerlink" title="最优缓存管理(Optimal Caching)"></a>最优缓存管理(Optimal Caching)</h4><p>计算机的缓存存取速度很快，但是容量有限，所以很多数据存放在硬盘当中。而从硬盘当中读取数据十分耗时，所以我们需要通过某种方式来对缓存进行管理以减少这样的耗时。</p>
+<p>例如一个缓存大小为<strong>3</strong>，初始时内容为{a,b,c}。需要的数据串为：<code>a, b, c, d, a, d, e, a, d, b, c</code> 求出最小交换次数。</p>
+<p><strong>贪心策略</strong>: 当发生访问缺失时（需要的内容不在缓存里面），则选择最后一次调用的缓存内容与之交换。例如在本例子中，当发现内容 <code>d</code> 缺失时，缓存内内容 <code>a b c</code> ，最后一个出现的是 <code>c</code> ，故选择 <code>c</code> 调度出去，共计调度两次。 </p>
+<h4 id="最短路径（Dijkstra）"><a href="#最短路径（Dijkstra）" class="headerlink" title="最短路径（Dijkstra）"></a>最短路径（Dijkstra）</h4><p>不写，此方法请查阅数据结构。</p>
+
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-08T22:23:53+08:00">2022-05-08</time>
-        
-      </div>
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/' itemprop="url">
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/>http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-29T21:26:52+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：May 29, 2022</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Algorithm/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Algorithm</p></a></div>
+  <span hidden itemprop="keywords">Algorithm</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/&title=贪心算法 - avaleph's blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/&title=贪心算法 - avaleph's blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/&title=贪心算法 - avaleph's blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2022/05/28/C-Traps-Pitfalls-3/'>
+          <p class='title'>C Traps & Pitfalls - 3<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2750,103 +2903,34 @@ $ ls –lt &#x2F;&#x2F;命令选项可以组合
     
     
 
-<section class="widget blogger shadow floatable blur desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">avaleph's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable blur desktop mobile pjax">
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Algorithm/" style="font-size: 14px; color: #999">Algorithm</a> <a href="/tags/BASIC/" style="font-size: 14px; color: #999">BASIC</a> <a href="/tags/CTraps/" style="font-size: 19px; color: #777">CTraps</a> <a href="/tags/OS/" style="font-size: 24px; color: #555">OS</a> <a href="/tags/OShw/" style="font-size: 14px; color: #999">OShw</a> <a href="/tags/UNIX/" style="font-size: 14px; color: #999">UNIX</a>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"><span class="toc-text">贪心算法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%BE%E9%9B%B6%E9%92%B1"><span class="toc-text">找零钱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98"><span class="toc-text">区间调度问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%BA%E9%97%B4%E9%80%89%E7%82%B9%E9%97%AE%E9%A2%98"><span class="toc-text">区间选点问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E5%8C%96%E7%AD%89%E5%BE%85%E6%97%B6%E9%97%B4%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E5%BB%B6%E7%94%B3%EF%BC%89"><span class="toc-text">最小化等待时间（操作系统最短路径延申）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#time-O-nlog-n"><span class="toc-text">time: O(nlog(n))</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#space-O-1"><span class="toc-text">space: O(1)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E4%BC%98%E8%A3%85%E8%BD%BD"><span class="toc-text">最优装载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E4%BC%98%E7%BC%93%E5%AD%98%E7%AE%A1%E7%90%86-Optimal-Caching"><span class="toc-text">最优缓存管理(Optimal Caching)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%EF%BC%88Dijkstra%EF%BC%89"><span class="toc-text">最短路径（Dijkstra）</span></a></li></ol></li></ol>
     </div>
   </section>
-
-
-  
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2875,13 +2959,14 @@ $ ls –lt &#x2F;&#x2F;命令选项可以组合
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4052,7 +4137,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/UNIX/","name":"UNIX"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"avaleph's blog","url":"http://example.com/","keywords":null,"description":"随笔","author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"随笔"},"publisher":{"@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/29/贪心算法/","name":"贪心算法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"贪心算法","description":"","datePublished":"2022-05-29T12:42:19.000Z","dateModified":"2022-05-29T13:26:52.235Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/","wordCount":0,"keywords":"Algorithm","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
