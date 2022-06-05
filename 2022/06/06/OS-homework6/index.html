@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.0.0-alpha.111">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/page/2/"/>
+  
+  <link rel="canonical" href="http://example.com/2022/06/06/os-homework6/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,18 +31,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>avaleph's blog</title>
-  <meta name="keywords" content="null">
+  <title>OS-homework6 - avaleph's blog</title>
+  <meta name="keywords" content="OShw,null">
   <meta desc name="description" content="随笔 - zhentao han - avaleph's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="avaleph&#39;s blog">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OS-homework6">
+<meta property="og:url" content="http://example.com/2022/06/06/OS-homework6/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
-<meta property="og:description" content="随笔">
+<meta property="og:description" content="1.文件系统的性能对整体系统的性能影响很大，请总结在实现文件系统时可以从哪些方面提高文件系统的性能，简要给出这些手段的具体解决思路。 高速缓存 应用缓冲区高速缓存技术，利用 cache 减少磁盘访问次数。 检查全部的读请求，查看在高速缓存中是否有所需要的块。如果存在，可执行读操作而无须访问磁盘。如果该块不在高速缓存中，首先要把它读到高速缓存，再复制到所需地方。之后，对同一个块的请求都通过高速缓存完">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2022-06-05T16:32:57.000Z">
+<meta property="article:modified_time" content="2022-06-05T16:33:44.151Z">
 <meta property="article:author" content="zhentao han">
+<meta property="article:tag" content="OShw">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2604,7 +2607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://avaleph-1312277395.cos.ap-beijing.myqcloud.com/wife.jpg"></div>
 
@@ -2658,15 +2661,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/06/OS-homework6/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="avaleph's blog">
   </span>
@@ -2675,192 +2671,252 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="随笔">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"  itemprop="url">
-        1-基本操作
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        基本操作显示文件列表文件列表ls$ ls
-$ ls –l &#x2F;&#x2F;详细信息列表
-$ ls –t &#x2F;&#x2F;按修改时间排序
-$ ls –lt &#x2F;&#x2F;命令选项可以组合
-显示文件catcat [OPINION]… [FILE]…
-后面加多个文件，显示所有的文件内容，如果没有文件，则读入标准输入，显示在标准输出上。
-移动文件
-文件复制cpcp file...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        OS-homework6
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-06-06T00:32:57+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 6, 2022</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h4 id="1-文件系统的性能对整体系统的性能影响很大，请总结在实现文件系统时可以从哪些方面提高文件系统的性能，简要给出这些手段的具体解决思路。"><a href="#1-文件系统的性能对整体系统的性能影响很大，请总结在实现文件系统时可以从哪些方面提高文件系统的性能，简要给出这些手段的具体解决思路。" class="headerlink" title="1.文件系统的性能对整体系统的性能影响很大，请总结在实现文件系统时可以从哪些方面提高文件系统的性能，简要给出这些手段的具体解决思路。"></a>1.文件系统的性能对整体系统的性能影响很大，请总结在实现文件系统时可以从哪些方面提高文件系统的性能，简要给出这些手段的具体解决思路。</h4><ol>
+<li><p>高速缓存</p>
+<p>应用缓冲区高速缓存技术，利用 <code>cache</code> 减少磁盘访问次数。</p>
+<p>检查全部的读请求，查看在高速缓存中是否有所需要的块。如果存在，可执行读操作而无须访问磁盘。如果该块不在高速缓存中，首先要把它读到高速缓存，再复制到所需地方。之后，对同一个块的请求都通过高速缓存完成。</p>
+</li>
+<li><p>块提前读</p>
+<p>在需要用到块之前，试图提前将其写入高速缓存，从而提高命中率。（仅适用于实际顺序读取的文件）。</p>
+</li>
+<li><p>减少磁盘臂运动</p>
+<p>把有可能顺序访问的块放在一起，最好是在同一个柱面上，从而减少磁盘臂的移动次数。</p>
+</li>
+</ol>
+<h4 id="2-简述文件控制块（FCB）的主要内容。"><a href="#2-简述文件控制块（FCB）的主要内容。" class="headerlink" title="2. 简述文件控制块（FCB）的主要内容。"></a>2. 简述文件控制块（FCB）的主要内容。</h4><p>有关文件存取控制的信息：文件名、类型、文件属性等。</p>
+<p>有关文件结构的信息：逻辑结构、物理结构、存储位置。</p>
+<p>有关文件管理的信息：建立日期、修改日期等。</p>
+<h4 id="3-在I-x2F-O系统中引入缓冲的主要原因是什么？某文件占10个磁盘块，现要把该文件的磁盘块逐-个读入主存缓冲区，并送用户区进行分析。⼀个缓冲区与磁盘块大小相等。把⼀个磁盘块-读入缓冲区的时间为100μs，缓冲区数据传送到用户区的时间是50μs，CPU对一块数据进行分析的时间为50μs。分别计算在单缓冲区和双缓冲区结构下，分析完该文件的时间是多少？"><a href="#3-在I-x2F-O系统中引入缓冲的主要原因是什么？某文件占10个磁盘块，现要把该文件的磁盘块逐-个读入主存缓冲区，并送用户区进行分析。⼀个缓冲区与磁盘块大小相等。把⼀个磁盘块-读入缓冲区的时间为100μs，缓冲区数据传送到用户区的时间是50μs，CPU对一块数据进行分析的时间为50μs。分别计算在单缓冲区和双缓冲区结构下，分析完该文件的时间是多少？" class="headerlink" title="3.在I&#x2F;O系统中引入缓冲的主要原因是什么？某文件占10个磁盘块，现要把该文件的磁盘块逐 个读入主存缓冲区，并送用户区进行分析。⼀个缓冲区与磁盘块大小相等。把⼀个磁盘块 读入缓冲区的时间为100μs，缓冲区数据传送到用户区的时间是50μs，CPU对一块数据进行分析的时间为50μs。分别计算在单缓冲区和双缓冲区结构下，分析完该文件的时间是多少？"></a>3.在I&#x2F;O系统中引入缓冲的主要原因是什么？某文件占10个磁盘块，现要把该文件的磁盘块逐 个读入主存缓冲区，并送用户区进行分析。⼀个缓冲区与磁盘块大小相等。把⼀个磁盘块 读入缓冲区的时间为100μs，缓冲区数据传送到用户区的时间是50μs，CPU对一块数据进行分析的时间为50μs。分别计算在单缓冲区和双缓冲区结构下，分析完该文件的时间是多少？</h4><p>主要原因：为了匹配 <code>CPU</code> 与外设的不同处理速度，因为cpu 的运算效率远远高过I&#x2F;O 设备的速率。减少对cpu 的中断频率，放宽对中断响应时间的限制，提高cpu 和 I&#x2F;O 设备之间的并行性。</p>
+<p>单缓冲区：150 * 10 + 50 &#x3D; 1550 μs</p>
+<p>双缓冲区：100 * 10 + 100 &#x3D; 1100 μs</p>
+<p><img src="D:\Blog\blog\source_posts\OS-homework6.assets\微信图片_20220605183826.jpg" class="lazyload" data-srcset="D:\Blog\blog\source_posts\OS-homework6.assets\微信图片_20220605183826.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="微信图片_20220605183826"></p>
+<h4 id="4-分析磁盘访问数据的时间。假设磁盘请求以柱面10、35、20、70、2、3和38的词序进入磁盘驱动器。寻道时磁头每移动⼀个柱面需要6ms，以下各算法所需的寻道时间是多少："><a href="#4-分析磁盘访问数据的时间。假设磁盘请求以柱面10、35、20、70、2、3和38的词序进入磁盘驱动器。寻道时磁头每移动⼀个柱面需要6ms，以下各算法所需的寻道时间是多少：" class="headerlink" title="4.分析磁盘访问数据的时间。假设磁盘请求以柱面10、35、20、70、2、3和38的词序进入磁盘驱动器。寻道时磁头每移动⼀个柱面需要6ms，以下各算法所需的寻道时间是多少："></a>4.分析磁盘访问数据的时间。假设磁盘请求以柱面10、35、20、70、2、3和38的词序进入磁盘驱动器。寻道时磁头每移动⼀个柱面需要6ms，以下各算法所需的寻道时间是多少：</h4><h4 id="a-先来先服务"><a href="#a-先来先服务" class="headerlink" title="a) 先来先服务"></a>a) 先来先服务</h4><h4 id="b-最短寻道时间优先"><a href="#b-最短寻道时间优先" class="headerlink" title="b) 最短寻道时间优先"></a>b) 最短寻道时间优先</h4><h4 id="c-扫描算法"><a href="#c-扫描算法" class="headerlink" title="c) 扫描算法"></a>c) 扫描算法</h4><h4 id="假设磁头初始位置为-15，方向向上-向大柱面号-。"><a href="#假设磁头初始位置为-15，方向向上-向大柱面号-。" class="headerlink" title="假设磁头初始位置为 15，方向向上(向大柱面号)。"></a>假设磁头初始位置为 15，方向向上(向大柱面号)。</h4><p>先来先服务：</p>
+<p>移动次序为：10 - 35 - 20 - 70 - 2 - 3 - 38</p>
+<p>寻道总时间为：（ 10 + 25 + 15 + 50 + 68 + 1 + 35 ）* 6 &#x3D; 1224 ms</p>
+<p>最短寻道时间优先：</p>
+<p>移动次序为：0 - 2 - 3 - 10 - 20 - 35 - 38 - 70 </p>
+<p>寻道总时间：( 2 + 1 + 7 + 10 + 15 + 3 + 32 )  * 6 &#x3D; 420ms</p>
+<p>扫描算法：</p>
+<p>移动次序为：15 - 20 - 35 - 38 - 70 - 10 - 3 - 2 </p>
+<p>寻道总时间：( 5 + 15 + 3 + 32 + 60 + 7 + 1 )  * 6 &#x3D; 738ms</p>
+<h4 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h4><ol>
+<li><p>因为根目录的目录项已读入内存中，所以可以直接读取第三级目录的内容，一个磁盘块可以放 <code>2 ^ 10/(2^7)=8</code> 个目录项，平均需要访问 <code>(1+16)/2=8.5</code> 次磁盘。文件占用的磁盘数为： <code>100/1=100</code> 块，访问一个块平均需要访问磁盘 <code>(1+100)/2=50.5</code> 次。因此，访问第三级目录下的一个文件的一个块平均需要访问磁盘 <code>8.5+1+50.5=60</code> 次。</p>
+</li>
+<li><p>一个目录项占用 <code>14 + 2 = 16</code> 个字节，一个磁盘块可以放2 ^ 10&#x2F;2 ^ 4&#x3D;2^6&#x3D;64 个目录项。根目录已在内存中，目录下只有三个目录项，可以一次读取。读取usr2的inode需读取1次磁盘，读取整个第三级目录所对应的目录项需要访问磁盘128&#x2F;64&#x3D;2次，因此平均读取user2目录的内容需要(1+2)&#x2F;2&#x3D;1.5次。读取第三级目录的inode需读取1次磁盘。第三级目录下的文件不超过50个，读取第三级目录的内容需读取1次磁盘。读取文件的inode需要读取1次磁盘。读取文件的1个块需要读取1次磁盘。</p>
+<p>综上，访问第三级目录下一个文件的一个块平均需要 1+1+1.5+1+1+1+1&#x3D;7.5 次磁盘。</p>
+</li>
+<li><p>总数据块数为 <code>16*2 ^ 70/2 ^ 10=2^64</code> ，表示这些磁盘块，需要 <code>64/8=8</code> 个字节。因此索引区可存放512&#x2F;8&#x3D;64个磁盘块号。</p>
+<p>因此，在采用一级索引的情况下，支持的最大文件为 <code>64 * 1K/8 * 1KB=64 * 128 * 1KB= 8MB</code> 。</p>
+</li>
+</ol>
+
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-08T22:23:53+08:00">2022-05-08</time>
-        
-      </div>
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2022/05/08/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/' itemprop="url">
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2022/06/06/OS-homework6/>http://example.com/2022/06/06/OS-homework6/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-06T00:33:44+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 6, 2022</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="avaleph's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="avaleph's blog">
-    <meta itemprop="description" content="随笔">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/OShw/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>OShw</p></a></div>
+  <span hidden itemprop="keywords">OShw</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/06/06/OS-homework6/&title=OS-homework6 - avaleph's blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/06/06/OS-homework6/&title=OS-homework6 - avaleph's blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/06/06/OS-homework6/&title=OS-homework6 - avaleph's blog&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2022/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/'>
+          <p class='title'>贪心算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>贪心算法找零钱假设1元、2元、5元、10元、20元、50元、100元的纸币分别有c0, c1, c2, c3, c4, c5, c6张。现在要用这些钱来支付K元，至少要用多少张纸币？
+贪心策略:...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2022/06/06/OS-homework6/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/"  itemprop="url">
-        2-虚拟存储概述
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        虚拟存储器虚存的原因主存容量具有限制，用户在编程的时候必须考虑主存容量限制。同时，多道程序设计的道数也受到限制。
-程序执行的过程具有顺序性和循环性，在访问内存时具有空间局部性的特点，某一阶段的执行也具有空间局部性的行为。
-因此，可以考虑只调入部分进程内容。
-虚存的基本思想存储管理先把进程的所有信息放到辅存中（相当于扩大了主存的容量），执行的时候先把一部分装入主存，以后根据执行行为随用随调入。...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-08T22:04:04+08:00">2022-05-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/08/%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="avaleph's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="avaleph's blog">
-    <meta itemprop="description" content="随笔">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/"  itemprop="url">
-        1-存储管理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        存储管理基础存储器硬件存储器的功能：保存数据，存储器的发展目标是高速、大容量和小体积。
-静态存储器（SRAM）：读写速度快，生产成本高，多用于容量较小的高速缓冲存储器。- Cache 
-动态存储器（DRAM）：读写速度较慢，集成度高，生产成本低，多用于容量较大的主存。
-存储组织结构存储组织的功能是在存储技术和CPU寻址技术许可的范围内组织合理的存储结构，其依据是访问速度匹配关系、容量要求和价...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-08T21:04:04+08:00">2022-05-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/05/08/%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
+  </article>
 
-</div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/">
-            <section class="post prev white-box shadow floatable blur" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
-  
+
+
 
 
 </div>
@@ -2870,103 +2926,34 @@ $ ls –lt &#x2F;&#x2F;命令选项可以组合
     
     
 
-<section class="widget blogger shadow floatable blur desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">avaleph's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable blur desktop mobile pjax">
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Algorithm/" style="font-size: 14px; color: #999">Algorithm</a> <a href="/tags/BASIC/" style="font-size: 14px; color: #999">BASIC</a> <a href="/tags/CTraps/" style="font-size: 20.67px; color: #6c6c6c">CTraps</a> <a href="/tags/OS/" style="font-size: 24px; color: #555">OS</a> <a href="/tags/OShw/" style="font-size: 17.33px; color: #828282">OShw</a> <a href="/tags/UNIX/" style="font-size: 14px; color: #999">UNIX</a>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%80%A7%E8%83%BD%E5%AF%B9%E6%95%B4%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%80%A7%E8%83%BD%E5%BD%B1%E5%93%8D%E5%BE%88%E5%A4%A7%EF%BC%8C%E8%AF%B7%E6%80%BB%E7%BB%93%E5%9C%A8%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8F%AF%E4%BB%A5%E4%BB%8E%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2%E6%8F%90%E9%AB%98%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%80%A7%E8%83%BD%EF%BC%8C%E7%AE%80%E8%A6%81%E7%BB%99%E5%87%BA%E8%BF%99%E4%BA%9B%E6%89%8B%E6%AE%B5%E7%9A%84%E5%85%B7%E4%BD%93%E8%A7%A3%E5%86%B3%E6%80%9D%E8%B7%AF%E3%80%82"><span class="toc-text">1.文件系统的性能对整体系统的性能影响很大，请总结在实现文件系统时可以从哪些方面提高文件系统的性能，简要给出这些手段的具体解决思路。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%AE%80%E8%BF%B0%E6%96%87%E4%BB%B6%E6%8E%A7%E5%88%B6%E5%9D%97%EF%BC%88FCB%EF%BC%89%E7%9A%84%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9%E3%80%82"><span class="toc-text">2. 简述文件控制块（FCB）的主要内容。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%9C%A8I-x2F-O%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%BC%95%E5%85%A5%E7%BC%93%E5%86%B2%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8E%9F%E5%9B%A0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9F%90%E6%96%87%E4%BB%B6%E5%8D%A010%E4%B8%AA%E7%A3%81%E7%9B%98%E5%9D%97%EF%BC%8C%E7%8E%B0%E8%A6%81%E6%8A%8A%E8%AF%A5%E6%96%87%E4%BB%B6%E7%9A%84%E7%A3%81%E7%9B%98%E5%9D%97%E9%80%90-%E4%B8%AA%E8%AF%BB%E5%85%A5%E4%B8%BB%E5%AD%98%E7%BC%93%E5%86%B2%E5%8C%BA%EF%BC%8C%E5%B9%B6%E9%80%81%E7%94%A8%E6%88%B7%E5%8C%BA%E8%BF%9B%E8%A1%8C%E5%88%86%E6%9E%90%E3%80%82%E2%BC%80%E4%B8%AA%E7%BC%93%E5%86%B2%E5%8C%BA%E4%B8%8E%E7%A3%81%E7%9B%98%E5%9D%97%E5%A4%A7%E5%B0%8F%E7%9B%B8%E7%AD%89%E3%80%82%E6%8A%8A%E2%BC%80%E4%B8%AA%E7%A3%81%E7%9B%98%E5%9D%97-%E8%AF%BB%E5%85%A5%E7%BC%93%E5%86%B2%E5%8C%BA%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%BA100%CE%BCs%EF%BC%8C%E7%BC%93%E5%86%B2%E5%8C%BA%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%81%E5%88%B0%E7%94%A8%E6%88%B7%E5%8C%BA%E7%9A%84%E6%97%B6%E9%97%B4%E6%98%AF50%CE%BCs%EF%BC%8CCPU%E5%AF%B9%E4%B8%80%E5%9D%97%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%88%86%E6%9E%90%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%BA50%CE%BCs%E3%80%82%E5%88%86%E5%88%AB%E8%AE%A1%E7%AE%97%E5%9C%A8%E5%8D%95%E7%BC%93%E5%86%B2%E5%8C%BA%E5%92%8C%E5%8F%8C%E7%BC%93%E5%86%B2%E5%8C%BA%E7%BB%93%E6%9E%84%E4%B8%8B%EF%BC%8C%E5%88%86%E6%9E%90%E5%AE%8C%E8%AF%A5%E6%96%87%E4%BB%B6%E7%9A%84%E6%97%B6%E9%97%B4%E6%98%AF%E5%A4%9A%E5%B0%91%EF%BC%9F"><span class="toc-text">3.在I&#x2F;O系统中引入缓冲的主要原因是什么？某文件占10个磁盘块，现要把该文件的磁盘块逐 个读入主存缓冲区，并送用户区进行分析。⼀个缓冲区与磁盘块大小相等。把⼀个磁盘块 读入缓冲区的时间为100μs，缓冲区数据传送到用户区的时间是50μs，CPU对一块数据进行分析的时间为50μs。分别计算在单缓冲区和双缓冲区结构下，分析完该文件的时间是多少？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%88%86%E6%9E%90%E7%A3%81%E7%9B%98%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E5%81%87%E8%AE%BE%E7%A3%81%E7%9B%98%E8%AF%B7%E6%B1%82%E4%BB%A5%E6%9F%B1%E9%9D%A210%E3%80%8135%E3%80%8120%E3%80%8170%E3%80%812%E3%80%813%E5%92%8C38%E7%9A%84%E8%AF%8D%E5%BA%8F%E8%BF%9B%E5%85%A5%E7%A3%81%E7%9B%98%E9%A9%B1%E5%8A%A8%E5%99%A8%E3%80%82%E5%AF%BB%E9%81%93%E6%97%B6%E7%A3%81%E5%A4%B4%E6%AF%8F%E7%A7%BB%E5%8A%A8%E2%BC%80%E4%B8%AA%E6%9F%B1%E9%9D%A2%E9%9C%80%E8%A6%816ms%EF%BC%8C%E4%BB%A5%E4%B8%8B%E5%90%84%E7%AE%97%E6%B3%95%E6%89%80%E9%9C%80%E7%9A%84%E5%AF%BB%E9%81%93%E6%97%B6%E9%97%B4%E6%98%AF%E5%A4%9A%E5%B0%91%EF%BC%9A"><span class="toc-text">4.分析磁盘访问数据的时间。假设磁盘请求以柱面10、35、20、70、2、3和38的词序进入磁盘驱动器。寻道时磁头每移动⼀个柱面需要6ms，以下各算法所需的寻道时间是多少：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#a-%E5%85%88%E6%9D%A5%E5%85%88%E6%9C%8D%E5%8A%A1"><span class="toc-text">a) 先来先服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b-%E6%9C%80%E7%9F%AD%E5%AF%BB%E9%81%93%E6%97%B6%E9%97%B4%E4%BC%98%E5%85%88"><span class="toc-text">b) 最短寻道时间优先</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#c-%E6%89%AB%E6%8F%8F%E7%AE%97%E6%B3%95"><span class="toc-text">c) 扫描算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%81%87%E8%AE%BE%E7%A3%81%E5%A4%B4%E5%88%9D%E5%A7%8B%E4%BD%8D%E7%BD%AE%E4%B8%BA-15%EF%BC%8C%E6%96%B9%E5%90%91%E5%90%91%E4%B8%8A-%E5%90%91%E5%A4%A7%E6%9F%B1%E9%9D%A2%E5%8F%B7-%E3%80%82"><span class="toc-text">假设磁头初始位置为 15，方向向上(向大柱面号)。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5"><span class="toc-text">5.</span></a></li></ol>
     </div>
   </section>
-
-
-  
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3002,7 +2989,7 @@ $ ls –lt &#x2F;&#x2F;命令选项可以组合
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4173,7 +4160,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"avaleph's blog","url":"http://example.com/","keywords":null,"description":"随笔","author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"随笔"},"publisher":{"@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/06/06/OS-homework6/","name":"OS-homework6"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"OS-homework6","description":"","datePublished":"2022-06-05T16:32:57.000Z","dateModified":"2022-06-05T16:33:44.151Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/06/06/OS-homework6/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/06/06/OS-homework6/","wordCount":0,"keywords":"OShw","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
