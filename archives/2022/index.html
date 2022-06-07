@@ -1909,7 +1909,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654569023277),
+    lastupdate: new Date(1654575910357),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2717,8 +2717,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        
-
+        文件类型目录文件：包含其它文件的文件。
+常规文件：文本文件、二进制文件（程序、数据库等）。
+设备文件：键盘、显示器、打印机、硬盘等。
+—- 一切都是文件
+查看文件类型$ls -l ; 分析文件结构$od -x 
+主目录和当前目录主目录：用户登录时所在的位置。（$cd 进入主目录）
+当前目录：用户或程序当前的工作位置。
+绝对路径和相对路径绝对路径：从根目录出发到某个文件的搜索路径。如：&#x2...
       
     
   </div>
@@ -2833,13 +2839,13 @@ Shell 是一种脚本语言任何代码最终都要被“翻译”成二进制�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        行编辑器 ed行编辑器ed启动之后，你的所有操作都被写入到缓冲区之中，这里的缓冲区是内存中的一块区域，如果不加保存，所有的修改都会丢失。
+        行编辑器 ed1970年由Ken Thompson编写
+优点：1）运行环境要求底，是UNIX系统最基本的编辑器；2） 编辑命令功能强大，至今仍然使用；3）ed提供的正则表达式广泛使用；4）运行速度很快。
+行编辑器ed启动之后，你的所有操作都被写入到缓冲区之中，这里的缓冲区是内存中的一块区域，如果不加保存，所有的修改都会丢失。
 启动ed$  ed
 显示默认提示符$  p
 得到输出 ？
-这个问号(?)是默认的 ed 提示符。
-使用 ed 输入文本按a开始输入，进入输入模式，以 . 结束，回到命令模式。
-查看已有缓冲区输入行号，会显示该行的缓冲区文件，也可以用,p命令显示所有的缓冲区...
+这个问号...
       
     
   </div>

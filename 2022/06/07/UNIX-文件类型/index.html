@@ -34,14 +34,16 @@
   <title>4-文件类型 - avaleph's blog</title>
   <meta name="keywords" content="UNIX,null">
   <meta desc name="description" content="随笔 - zhentao han - avaleph's blog">
-  <meta property="og:type" content="article">
+  
+<meta property="og:type" content="article">
 <meta property="og:title" content="4-文件类型">
 <meta property="og:url" content="http://example.com/2022/06/07/UNIX-%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
+<meta property="og:description" content="文件类型目录文件：包含其它文件的文件。 常规文件：文本文件、二进制文件（程序、数据库等）。 设备文件：键盘、显示器、打印机、硬盘等。 —- 一切都是文件 查看文件类型$ls -l ; 分析文件结构$od -x  主目录和当前目录主目录：用户登录时所在的位置。（$cd 进入主目录） 当前目录：用户或程序当前的工作位置。 绝对路径和相对路径绝对路径：从根目录出发到某个文件的搜索路径。如：&#x2F;h">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-06-07T02:29:39.000Z">
-<meta property="article:modified_time" content="2022-06-07T02:29:54.119Z">
+<meta property="article:modified_time" content="2022-06-07T03:57:28.128Z">
 <meta property="article:author" content="zhentao han">
 <meta property="article:tag" content="UNIX">
 <meta name="twitter:card" content="summary">
@@ -1910,7 +1912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654569023277),
+    lastupdate: new Date(1654575910357),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2726,7 +2728,47 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><p>目录文件：包含其它文件的文件。</p>
+<p>常规文件：文本文件、二进制文件（程序、数据库等）。</p>
+<p>设备文件：键盘、显示器、打印机、硬盘等。</p>
+<p>—- 一切都是文件</p>
+<p>查看文件类型$ls -l ; 分析文件结构$od -x </p>
+<h3 id="主目录和当前目录"><a href="#主目录和当前目录" class="headerlink" title="主目录和当前目录"></a>主目录和当前目录</h3><p><strong>主目录</strong>：用户登录时所在的位置。（$cd 进入主目录）</p>
+<p><strong>当前目录</strong>：用户或程序当前的工作位置。</p>
+<h3 id="绝对路径和相对路径"><a href="#绝对路径和相对路径" class="headerlink" title="绝对路径和相对路径"></a>绝对路径和相对路径</h3><p><strong>绝对路径</strong>：从根目录出发到某个文件的搜索路径。如：&#x2F;home&#x2F;user1&#x2F;myc&#x2F;p1.c</p>
+<p><strong>相对路径</strong>：从当前目录出发到某个文件的搜索路径。如：myc&#x2F;p1.c,  .&#x2F;bin&#x2F;prog1, ..&#x2F;user2&#x2F;file1</p>
+<h3 id="文件名"><a href="#文件名" class="headerlink" title="文件名"></a>文件名</h3><p>建议使用字母、数字、’_’、’.’   </p>
+<p>*<em>在shell中具有特殊含义的符号避免使用，如&amp;<em>{}[]$?%等</em></em></p>
+<h3 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h3><p>使用 <code>$ ls –l a.out</code> 能得到文件的相关信息。</p>
+<p>其中开头的 <code>-rwx-rx-r</code> 代表了权限位。</p>
+<p><strong>rwx：读、写、运行</strong></p>
+<p><strong>r可读</strong>	表示具有读取文件的权限。</p>
+<p><strong>w可写</strong>	表示具有新增、修改文件内容的权限。<br>                1、如果没有r读的权限，使用 vi 编辑器如果强制保存，则会覆盖原来的文件内容<br>                2、删除或修改文件名称的权限，是受父级目录的权限控制，和文件本身的权限没有关系。<br>                因为文件名在父级目录的 block 里保存。</p>
+<p><strong>x可执行</strong>	表示具有可以执行文件的权限。<br>                1、想要执行文件，那么文件本身需要能够执行。<br>                2、普通用户必须还要有 r 的权限才能够执行，没有 r 不能执行。<br>                3、root 用户即使没有 r 权限，只要有 x 权限就可以执行。<br>                4、root 用户位没有执行权限，但是只要其他权限位上有 x 权限，就可以执行。</p>
+<p>9个权限位，每3个为一组，分别代表文件所有者、同组用户和其他用户的权限。</p>
+<p>其中， <code>-</code> 表示该位无此权限。</p>
+<h4 id="更改文件权限chmod"><a href="#更改文件权限chmod" class="headerlink" title="更改文件权限chmod"></a>更改文件权限chmod</h4><p>$ chmod 777 a.out</p>
+<p>$ chmod –w a.out</p>
+<p>$ chmod +x ldir</p>
+<h4 id="用户类型："><a href="#用户类型：" class="headerlink" title="用户类型："></a>用户类型：</h4><p> a 表示所有用户  All</p>
+<p>u 表示属主      user</p>
+<p>g 表示所属组    group</p>
+<p>o 表示其他用户  other  </p>
+<h4 id="操作字符："><a href="#操作字符：" class="headerlink" title="操作字符："></a>操作字符：</h4><p>+ 加入某个权限</p>
+<p>- 减去某个权限</p>
+<p>&#x3D; 设置成某个权限</p>
+<h3 id="目录文件权限"><a href="#目录文件权限" class="headerlink" title="目录文件权限"></a>目录文件权限</h3><p>x： 是否可以存取目录中的文件。</p>
+<p>r： 是否可以对目录进行文件列表。可以存取已知的文件。</p>
+<p>w：是否可以增加、删除目录中的文件。</p>
+<h3 id="i节点"><a href="#i节点" class="headerlink" title="i节点"></a>i节点</h3><p>在linux 文件系统中，是以块为单位存储信息的，为了找到某一个文件在存储空间中存放的位置，用i 节点对一个文件进行索引。I 节点包含了描述一个文件所必须的全部信息。所以i节点是文件系统管理的一个数据结构。</p>
+<p>$  ls -il </p>
+<p>文件的组成：文件名、i节点、文件内容。</p>
+<p>i节点中记录文件权限、所有者、修改日期、长度、存放位置等等。</p>
+<p>$ ln file1 file2 &#x2F;&#x2F;给file1所对应的i节点增加一个文件名file2</p>
+<p>$ rm file2 &#x2F;&#x2F;删除文件名file2。对应的i节点和文件内容依然存在。</p>
+<p>$ rm file1 &#x2F;&#x2F;删除文件名file1。由于没有文件名指向该i节点，系统删除该i节点及其对应的文件内容</p>
+<h3 id="设备文件"><a href="#设备文件" class="headerlink" title="设备文件"></a>设备文件</h3><p>待续。。。</p>
+
 
   </div>
   
@@ -2762,7 +2804,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-07T10:29:54+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-07T11:57:28+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Jun 7, 2022</p>
@@ -2889,9 +2931,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-text">文件类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E7%9B%AE%E5%BD%95%E5%92%8C%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95"><span class="toc-text">主目录和当前目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-text">绝对路径和相对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-text">文件名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-text">文件权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90chmod"><span class="toc-text">更改文件权限chmod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="toc-text">用户类型：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6%EF%BC%9A"><span class="toc-text">操作字符：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-text">目录文件权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#i%E8%8A%82%E7%82%B9"><span class="toc-text">i节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E6%96%87%E4%BB%B6"><span class="toc-text">设备文件</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -4111,7 +4163,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/06/07/UNIX-文件类型/","name":"4-文件类型"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"4-文件类型","description":"","datePublished":"2022-06-07T02:29:39.000Z","dateModified":"2022-06-07T02:29:54.119Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/06/07/UNIX-%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/06/07/UNIX-%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/","wordCount":0,"keywords":"UNIX","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/06/07/UNIX-文件类型/","name":"4-文件类型"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"4-文件类型","description":"","datePublished":"2022-06-07T02:29:39.000Z","dateModified":"2022-06-07T03:57:28.128Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/06/07/UNIX-%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/06/07/UNIX-%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/","wordCount":0,"keywords":"UNIX","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

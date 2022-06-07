@@ -39,11 +39,11 @@
 <meta property="og:title" content="2-ed编辑器">
 <meta property="og:url" content="http://example.com/2022/06/06/UNIX-ed%E7%BC%96%E8%BE%91%E5%99%A8/index.html">
 <meta property="og:site_name" content="avaleph&#39;s blog">
-<meta property="og:description" content="行编辑器 ed行编辑器ed启动之后，你的所有操作都被写入到缓冲区之中，这里的缓冲区是内存中的一块区域，如果不加保存，所有的修改都会丢失。 启动ed$  ed 显示默认提示符$  p 得到输出 ？ 这个问号(?)是默认的 ed 提示符。 使用 ed 输入文本按a开始输入，进入输入模式，以 . 结束，回到命令模式。 查看已有缓冲区输入行号，会显示该行的缓冲区文件，也可以用,p命令显示所有的缓冲区，如果">
+<meta property="og:description" content="行编辑器 ed1970年由Ken Thompson编写 优点：1）运行环境要求底，是UNIX系统最基本的编辑器；2） 编辑命令功能强大，至今仍然使用；3）ed提供的正则表达式广泛使用；4）运行速度很快。 行编辑器ed启动之后，你的所有操作都被写入到缓冲区之中，这里的缓冲区是内存中的一块区域，如果不加保存，所有的修改都会丢失。 启动ed$  ed 显示默认提示符$  p 得到输出 ？ 这个问号(?)">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-06-06T14:35:28.000Z">
-<meta property="article:modified_time" content="2022-06-06T14:35:47.692Z">
+<meta property="article:modified_time" content="2022-06-07T04:24:54.918Z">
 <meta property="article:author" content="zhentao han">
 <meta property="article:tag" content="UNIX">
 <meta name="twitter:card" content="summary">
@@ -1912,7 +1912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.fda82528.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.0ca6d77c.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.93bac33d.css"}},
     default: {"avatar":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654569023277),
+    lastupdate: new Date(1654575910357),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2728,25 +2728,47 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="行编辑器-ed"><a href="#行编辑器-ed" class="headerlink" title="行编辑器 ed"></a>行编辑器 ed</h3><p>行编辑器ed启动之后，你的所有操作都被写入到缓冲区之中，这里的缓冲区是内存中的一块区域，如果不加保存，所有的修改都会丢失。</p>
-<h5 id="启动ed"><a href="#启动ed" class="headerlink" title="启动ed"></a>启动ed</h5><p>$  ed</p>
-<h5 id="显示默认提示符"><a href="#显示默认提示符" class="headerlink" title="显示默认提示符"></a>显示默认提示符</h5><p>$  p</p>
+    <h3 id="行编辑器-ed"><a href="#行编辑器-ed" class="headerlink" title="行编辑器 ed"></a>行编辑器 ed</h3><p>1970年由Ken Thompson编写</p>
+<p>优点：1）运行环境要求底，是UNIX系统最基本的编辑器；2） 编辑命令功能强大，至今仍然使用；3）ed提供的正则表达式广泛使用；4）运行速度很快。</p>
+<p>行编辑器ed启动之后，你的所有操作都被写入到缓冲区之中，这里的缓冲区是内存中的一块区域，如果不加保存，所有的修改都会丢失。</p>
+<h4 id="启动ed"><a href="#启动ed" class="headerlink" title="启动ed"></a>启动ed</h4><p>$  ed</p>
+<h4 id="显示默认提示符"><a href="#显示默认提示符" class="headerlink" title="显示默认提示符"></a>显示默认提示符</h4><p>$  p</p>
 <p>得到输出 ？</p>
 <p>这个问号(?)是默认的 ed 提示符。</p>
-<h5 id="使用-ed-输入文本"><a href="#使用-ed-输入文本" class="headerlink" title="使用 ed 输入文本"></a>使用 <code>ed</code> 输入文本</h5><p>按<code>a</code>开始输入，进入输入模式，以 <code>.</code> 结束，回到命令模式。</p>
-<h5 id="查看已有缓冲区"><a href="#查看已有缓冲区" class="headerlink" title="查看已有缓冲区"></a>查看已有缓冲区</h5><p>输入行号，会显示该行的缓冲区文件，也可以用<code>,p</code>命令显示所有的缓冲区，如果输入行号非法，则显示 <code>?</code> 。</p>
-<h5 id="写入文件（保存）"><a href="#写入文件（保存）" class="headerlink" title="写入文件（保存）"></a>写入文件（保存）</h5><p>如果你现在对文本很满意，你可以使用 w 命令把缓冲区写入到文件中，后面跟上目标文件名：</p>
+<h4 id="显示命令-p"><a href="#显示命令-p" class="headerlink" title="显示命令 p"></a>显示命令 p</h4><p>p  显示当前行</p>
+<p>5  将当前行改为第5行并显示当前行</p>
+<p>m，np 显示m到n行 （m,n为数字）</p>
+<p>.代表当前行，$代表最后一行</p>
+<p>可使用相对行，如 .,.+3p  $-5,$p  .加偏移量时可以省略。</p>
+<h4 id="使用-ed-输入文本"><a href="#使用-ed-输入文本" class="headerlink" title="使用 ed 输入文本"></a>使用 <code>ed</code> 输入文本</h4><p>按<code>a</code>开始输入，进入输入模式，以 <code>.</code> 结束，回到命令模式。</p>
+<h4 id="临时进入shell"><a href="#临时进入shell" class="headerlink" title="临时进入shell"></a>临时进入shell</h4><p>$  ！</p>
+<h4 id="查看已有缓冲区"><a href="#查看已有缓冲区" class="headerlink" title="查看已有缓冲区"></a>查看已有缓冲区</h4><p>输入行号，会显示该行的缓冲区文件，也可以用<code>,p</code>命令显示所有的缓冲区，如果输入行号非法，则显示 <code>?</code> 。</p>
+<h4 id="写入文件（保存）"><a href="#写入文件（保存）" class="headerlink" title="写入文件（保存）"></a>写入文件（保存）</h4><p>如果你现在对文本很满意，你可以使用 w 命令把缓冲区写入到文件中，后面跟上目标文件名：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$  ?</span><br><span class="line">$  w example.txt</span><br><span class="line">$  19</span><br></pre></td></tr></table></figure>
 
 <p>写操作后显示的那个数字代表着写入到文件中的字符数。</p>
-<h5 id="把已有文件读入到缓冲区中"><a href="#把已有文件读入到缓冲区中" class="headerlink" title="把已有文件读入到缓冲区中"></a>把已有文件读入到缓冲区中</h5><p>命令 <code>r + filename</code></p>
+<h4 id="把已有文件读入到缓冲区中"><a href="#把已有文件读入到缓冲区中" class="headerlink" title="把已有文件读入到缓冲区中"></a>把已有文件读入到缓冲区中</h4><p>命令 <code>r + filename</code></p>
 <p>或者在启动时加入参数  <code>$  ed + filename</code> 。</p>
-<h5 id="编辑缓冲区"><a href="#编辑缓冲区" class="headerlink" title="编辑缓冲区"></a>编辑缓冲区</h5><p>使用 s 命令调用搜索函数，后面跟着搜索文本和替换文本。</p>
+<h4 id="编辑缓冲区"><a href="#编辑缓冲区" class="headerlink" title="编辑缓冲区"></a>编辑缓冲区</h4><p>使用 s 命令调用搜索函数，后面跟着搜索文本和替换文本。</p>
 <p><code>$  s/oldword/newword</code></p>
 <p>注意，此命令只会替换第一个搜索到的字符串。这些修改只存在于缓冲区里。</p>
-<h5 id="清空缓冲区"><a href="#清空缓冲区" class="headerlink" title="清空缓冲区"></a>清空缓冲区</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$  c</span><br><span class="line">$  ,p</span><br></pre></td></tr></table></figure>
+<p><code>s/old/new/</code> 把当前行中第一个old替换为new</p>
+<p><code>s/old/new/g</code> 把当前行中每一个old都替换为new</p>
+<p><code>1,$ s/old/new/g</code> 把文件中所有的old都替换为new</p>
+<p>速记符&amp;</p>
+<p><code>1，$s/big/very &amp;/g</code> 把文件中的big都替换为very big</p>
+<p><code>s/and/\&amp;/</code> 把and改为&amp;</p>
+<h4 id="清空缓冲区"><a href="#清空缓冲区" class="headerlink" title="清空缓冲区"></a>清空缓冲区</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$  c</span><br><span class="line">$  ,p</span><br></pre></td></tr></table></figure>
 
-<h5 id="退出行编辑器ed"><a href="#退出行编辑器ed" class="headerlink" title="退出行编辑器ed"></a>退出行编辑器ed</h5><p>使用<code>q</code>命令，退出当前的ed会话，并不会保存缓冲区。它并不会给你一个保存缓冲区的机会，所以你要确保自己在这之前执行了保存操作。</p>
+<h4 id="查找内容"><a href="#查找内容" class="headerlink" title="查找内容"></a>查找内容</h4><p>&#x2F;模式&#x2F; 查找下一个匹配模式的行，遇到尾行则从首行开始。</p>
+<p>?模式? 查找上一个匹配模式的行，遇到首行则从尾行开始。</p>
+<p>&#x2F;&#x2F; 重复查找下一个匹配模式的行，模式不变。</p>
+<p>??重复查找上一个匹配模式的行，模式不变。</p>
+<h4 id="插入、删除、撤销"><a href="#插入、删除、撤销" class="headerlink" title="插入、删除、撤销"></a>插入、删除、撤销</h4><p><code>na</code> 从n行后添加</p>
+<p><code>ni</code> 从n行前插入。i、a都以行首.来结束</p>
+<p><code>m,nd</code> 删除m至n行</p>
+<p><code>u</code> 撤销所做的编辑</p>
+<h4 id="退出行编辑器ed"><a href="#退出行编辑器ed" class="headerlink" title="退出行编辑器ed"></a>退出行编辑器ed</h4><p>使用<code>q</code>命令，退出当前的ed会话，并不会保存缓冲区。它并不会给你一个保存缓冲区的机会，所以你要确保自己在这之前执行了保存操作。</p>
 
 
   </div>
@@ -2783,10 +2805,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-06T22:35:47+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-07T12:24:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 6, 2022</p>
+    <p>更新于：Jun 7, 2022</p>
   </a>
 </div>
 
@@ -2927,7 +2949,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E7%BC%96%E8%BE%91%E5%99%A8-ed"><span class="toc-text">行编辑器 ed</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8ed"><span class="toc-text">启动ed</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E9%BB%98%E8%AE%A4%E6%8F%90%E7%A4%BA%E7%AC%A6"><span class="toc-text">显示默认提示符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-ed-%E8%BE%93%E5%85%A5%E6%96%87%E6%9C%AC"><span class="toc-text">使用 ed 输入文本</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E6%9C%89%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-text">查看已有缓冲区</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%EF%BC%88%E4%BF%9D%E5%AD%98%EF%BC%89"><span class="toc-text">写入文件（保存）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8A%8A%E5%B7%B2%E6%9C%89%E6%96%87%E4%BB%B6%E8%AF%BB%E5%85%A5%E5%88%B0%E7%BC%93%E5%86%B2%E5%8C%BA%E4%B8%AD"><span class="toc-text">把已有文件读入到缓冲区中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-text">编辑缓冲区</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B8%85%E7%A9%BA%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-text">清空缓冲区</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E8%A1%8C%E7%BC%96%E8%BE%91%E5%99%A8ed"><span class="toc-text">退出行编辑器ed</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E7%BC%96%E8%BE%91%E5%99%A8-ed"><span class="toc-text">行编辑器 ed</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8ed"><span class="toc-text">启动ed</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E9%BB%98%E8%AE%A4%E6%8F%90%E7%A4%BA%E7%AC%A6"><span class="toc-text">显示默认提示符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E5%91%BD%E4%BB%A4-p"><span class="toc-text">显示命令 p</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-ed-%E8%BE%93%E5%85%A5%E6%96%87%E6%9C%AC"><span class="toc-text">使用 ed 输入文本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%B4%E6%97%B6%E8%BF%9B%E5%85%A5shell"><span class="toc-text">临时进入shell</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E6%9C%89%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-text">查看已有缓冲区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%EF%BC%88%E4%BF%9D%E5%AD%98%EF%BC%89"><span class="toc-text">写入文件（保存）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%8A%E5%B7%B2%E6%9C%89%E6%96%87%E4%BB%B6%E8%AF%BB%E5%85%A5%E5%88%B0%E7%BC%93%E5%86%B2%E5%8C%BA%E4%B8%AD"><span class="toc-text">把已有文件读入到缓冲区中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-text">编辑缓冲区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%85%E7%A9%BA%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="toc-text">清空缓冲区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%86%85%E5%AE%B9"><span class="toc-text">查找内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E3%80%81%E6%92%A4%E9%94%80"><span class="toc-text">插入、删除、撤销</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E8%A1%8C%E7%BC%96%E8%BE%91%E5%99%A8ed"><span class="toc-text">退出行编辑器ed</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -4149,7 +4171,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/06/06/UNIX-ed编辑器/","name":"2-ed编辑器"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"2-ed编辑器","description":"","datePublished":"2022-06-06T14:35:28.000Z","dateModified":"2022-06-06T14:35:47.692Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/06/06/UNIX-ed%E7%BC%96%E8%BE%91%E5%99%A8/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/06/06/UNIX-ed%E7%BC%96%E8%BE%91%E5%99%A8/","wordCount":0,"keywords":"UNIX","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"avaleph's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"随笔"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"avaleph's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/06/06/UNIX-ed编辑器/","name":"2-ed编辑器"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"2-ed编辑器","description":"","datePublished":"2022-06-06T14:35:28.000Z","dateModified":"2022-06-07T04:24:54.918Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/06/06/UNIX-ed%E7%BC%96%E8%BE%91%E5%99%A8/"},"author":{"@type":"Person","name":"zhentao han","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"avaleph's blog","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/06/06/UNIX-ed%E7%BC%96%E8%BE%91%E5%99%A8/","wordCount":0,"keywords":"UNIX","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
